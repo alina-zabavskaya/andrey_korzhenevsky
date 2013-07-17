@@ -6,7 +6,7 @@
         <div id="content">
             <fmt:message key="index.property_message"/>
         </div>
-        <p>Test commit 2</p>
+        <p>Test commit 3</p>
         <p>Value = <c:out value="${value}"/></p>
     </body>
 </html>
