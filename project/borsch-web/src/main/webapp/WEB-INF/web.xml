@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
          version="2.5">
 
-    
+
     <context-param>
         <param-name>contextConfigLocation</param-name>
         <param-value>classpath:/applicationContext.xml</param-value>
@@ -12,8 +12,8 @@
 
     <jsp-config>
         <jsp-property-group>
-          <url-pattern>*.jsp</url-pattern>
-          <page-encoding>utf-8</page-encoding>
+            <url-pattern>*.jsp</url-pattern>
+            <page-encoding>utf-8</page-encoding>
         </jsp-property-group>
     </jsp-config>
 
@@ -33,7 +33,7 @@
             <param-value>true</param-value>
         </init-param>
     </filter>
-    
+
     <filter>
         <filter-name>sitemesh</filter-name>
         <filter-class>com.opensymphony.sitemesh.webapp.SiteMeshFilter</filter-class>
