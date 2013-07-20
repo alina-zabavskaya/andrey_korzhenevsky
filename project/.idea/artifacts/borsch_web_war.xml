@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="borsch-web:war">
+    <output-path>$PROJECT_DIR$/borsch-web/target</output-path>
+    <root id="archive" name="borsch.war">
+      <element id="artifact" artifact-name="borsch-web:war exploded" />
+    </root>
+  </artifact>
+</component>

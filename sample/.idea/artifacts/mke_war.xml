@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="mke:war">
+    <output-path>$USER_HOME$/Desktop/trunk/target</output-path>
+    <root id="archive" name="mke-1.0.0.0.war">
+      <element id="artifact" artifact-name="mke:war exploded" />
+    </root>
+  </artifact>
+</component>
