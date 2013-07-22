@@ -3,16 +3,13 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <title><decorator:title default="Exadel diner"/></title>
+    <title><decorator:title default="Hello World"/></title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <decorator:head/>
 </head>
 <body>
-
-
-
 <div id="page">
     <!-- <div class="head_line">
          <div class="wrp_ctr">
@@ -27,16 +24,9 @@
             <a class="logo" href="#"></a>
 
             <div class="login_block">
-                <div>
-                    <a href='../login_form/login.html' class="href_white"> Войти</a>
-                </div>
-                <div>
-                    <a href='../registration/registration.jsp'>Зарегистрироваться</a>
-                </div>
-                <!-- <div>Зарегистрируйтесь или Войдите!</div>
-                   <div>//поле для авторизациии//</div>
-                   <div>//и регистрации//</div>
-                   -->
+                <div>Зарегистрируйтесь или Войдите!</div>
+                <div>//поле для авторизациии//</div>
+                <div>//и регистрации//</div>
             </div>
         </div>
         <div id="mainbar">
@@ -56,18 +46,22 @@
                         <li><a href="#">Среда</a>
                         <li><a href="#">Четверг</a>
                         <li><a href="#">Патница</a>
+                        <li><a href="#">Суббота</a>
+                        <li><a href="#">Воскресенье</a>
+                        </li>
                     </ul>
                 </div>
 
             </div>
 
             <div class="content">
-                <decorator:body />
+
+                <decorator:body/>
                 <dl>
                     <dt class="elem">
                         <a href="#">
                             <strong>Название</strong>
-
+                            <span>Категория</span>
                         </a>
                         <img src="#" width="180" height="200">
                         Цена
@@ -75,7 +69,7 @@
                     <dt class="elem">
                         <a href="#">
                             <strong>Название</strong>
-
+                            <span>Категория</span>
                         </a>
                         <img src="#" width="180" height="200">
                         Цена
@@ -83,7 +77,7 @@
                     <dt class="elem">
                         <a href="#">
                             <strong>Название</strong>
-
+                            <span>Категория</span>
                         </a>
                         <img src="#" width="180" height="200">
                         Цена
@@ -92,7 +86,7 @@
                     <dt class="elem">
                         <a href="#">
                             <strong>Название</strong>
-
+                            <span>Категория</span>
                         </a>
                         <img src="#" width="180" height="200">
                         Цена
@@ -108,6 +102,6 @@
         <div class="right_foot"></div>
     </div>
 </div>
-
 </body>
+
 </html>

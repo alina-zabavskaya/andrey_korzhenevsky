@@ -3,13 +3,13 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link rel="stylesheet" type="text/css" href="../WEB-INF/css/style.css">
-    <title><decorator:title default="Exadel diner"/></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <title><decorator:title default="Hello World"/></title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <decorator:head/>
 </head>
 <body>
-
 <div id="page">
     <!-- <div class="head_line">
          <div class="wrp_ctr">
@@ -25,7 +25,7 @@
 
             <div class="login_block">
                 <div>
-                    <a href='login_form/login.html' class="href_white"> Войти</a>
+                    <a href='/login_form/login.html' class="href_white"> Войти</a>
                 </div>
                 <div>
                     <a href='#'>Зарегистрироваться</a>
@@ -53,13 +53,11 @@
                         <li><a href="#">Среда</a>
                         <li><a href="#">Четверг</a>
                         <li><a href="#">Патница</a>
-                    </ul>
                 </div>
 
             </div>
 
             <div class="content">
-                <decorator:body />
                 <dl>
                     <dt class="elem">
                         <a href="#">
@@ -104,7 +102,7 @@
         <div class="left_foot"></div>
         <div class="right_foot"></div>
     </div>
-</div>
-
+    </div>
 </body>
+
 </html>
