@@ -1,13 +1,11 @@
 <%@ page contentType="text/html; charset=UTF-8" language="java" %>
-<%@ taglib uri="http://www.opensymphony.com/sitemesh/decorator" prefix="decorator" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 
-    <title><decorator:title default="Hello World"/></title>
+    <title>Hello world!</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <decorator:head/>
 </head>
 <body>
 <div id="page">
@@ -24,12 +22,8 @@
             <a class="logo" href="#"></a>
 
             <div class="login_block">
-                <div>
                     <a href='/login_form/login.html' class="href_white"> Войти</a>
-                </div>
-                <div>
                     <a href='#'>Зарегистрироваться</a>
-                </div>
                 <!-- <div>Зарегистрируйтесь или Войдите!</div>
                    <div>//поле для авторизациии//</div>
                    <div>//и регистрации//</div>
@@ -53,7 +47,10 @@
                         <li><a href="#">Среда</a>
                         <li><a href="#">Четверг</a>
                         <li><a href="#">Патница</a>
+                        </li>
+                    </ul>
                 </div>
+
 
             </div>
 
@@ -102,7 +99,7 @@
         <div class="left_foot"></div>
         <div class="right_foot"></div>
     </div>
-    </div>
+</div>
 </body>
 
 </html>

@@ -16,10 +16,10 @@ public class IndexController {
     private SomeBusinessLogicService service = ServiceFactory.getSomeBusinessLogicService();
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
-    public ModelAndView handleRequest() {
+    public String handleRequest() {
         ModelAndView model = new ModelAndView("home");
         model.addObject("value", service.doSomeWork());
-        return model;
+        return "master";
     }
 
 }
