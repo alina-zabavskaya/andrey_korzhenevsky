@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-defenition PUBLIC >
+<tiles-defenition>
+    <defenition name="default" template="/WEB-INF/jsp/layouts/default.jsp">
+
+    </defenition>
+</tiles-defenition>

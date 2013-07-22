@@ -1,12 +1,19 @@
-<%@ page contentType="text/html; charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!doctype html>
-<html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <!-- Basics -->
+    <meta charset="utf-8">
+    <title>Login</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/registration/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/registration/animate.css"/>
+    <link rel="stylesheet" type="text/css" href="css/registration/styles.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
 
-    <title>Hello world!</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+<body>
+
+<!-- Begin Page Content -->
 <body>
 <div id="page">
     <!-- <div class="head_line">
@@ -55,41 +62,20 @@
             </div>
 
             <div class="content">
-                <dl>
-                    <dt class="elem">
-                        <a href="#">
-                            <strong>Название</strong>
+                <div id="auth_form">
+                    <form>
+                        <label for="name">Имя:</label>
+                        <input type="name">
+                        <label for="username">Пароль:</label>
+                        <!--<p><a href="#">Забыли пароль?</a>-->
+                        <input type="password">
 
-                        </a>
-                        <img src="#" width="180" height="200">
-                        Цена
-                    </dt>
-                    <dt class="elem">
-                        <a href="#">
-                            <strong>Название</strong>
-
-                        </a>
-                        <img src="#" width="180" height="200">
-                        Цена
-                    </dt>
-                    <dt class="elem">
-                        <a href="#">
-                            <strong>Название</strong>
-
-                        </a>
-                        <img src="#" width="180" height="200">
-                        Цена
-                    </dt>
-                    <dt class="clear"></dt>
-                    <dt class="elem">
-                        <a href="#">
-                            <strong>Название</strong>
-
-                        </a>
-                        <img src="#" width="180" height="200">
-                        Цена
-                    </dt>
-                </dl>
+                        <div id="lower">
+                            <input type="checkbox"><label class="check" for="checkbox">Замомнить меня</label>
+                            <input type="submit" value="Войти">
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
@@ -102,4 +88,12 @@
 </div>
 </body>
 
+<!-- End Page Content -->
+</body>
 </html>
+
+
+
+
+
+

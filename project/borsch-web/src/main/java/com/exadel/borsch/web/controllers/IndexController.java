@@ -15,6 +15,11 @@ public class IndexController {
 
     private SomeBusinessLogicService service = ServiceFactory.getSomeBusinessLogicService();
 
+    @RequestMapping(value = "/enter", method = RequestMethod.GET)
+    public String showRegistrationForn() {
+        return "enter";
+    }
+
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String handleRequest() {
         ModelAndView model = new ModelAndView("home");
