@@ -24,9 +24,16 @@
             <a class="logo" href="#"></a>
 
             <div class="login_block">
-                <div>Зарегистрируйтесь или Войдите!</div>
-                <div>//поле для авторизациии//</div>
-                <div>//и регистрации//</div>
+                <div>
+                    <a href='/login_form/login.html' class="href_white"> Войти</a>
+                </div>
+                <div>
+                    <a href='#'>Зарегистрироваться</a>
+                </div>
+                <!-- <div>Зарегистрируйтесь или Войдите!</div>
+                   <div>//поле для авторизациии//</div>
+                   <div>//и регистрации//</div>
+                   -->
             </div>
         </div>
         <div id="mainbar">
@@ -46,22 +53,16 @@
                         <li><a href="#">Среда</a>
                         <li><a href="#">Четверг</a>
                         <li><a href="#">Патница</a>
-                        <li><a href="#">Суббота</a>
-                        <li><a href="#">Воскресенье</a>
-                        </li>
-                    </ul>
                 </div>
 
             </div>
 
             <div class="content">
-
-                <decorator:body/>
                 <dl>
                     <dt class="elem">
                         <a href="#">
                             <strong>Название</strong>
-                            <span>Категория</span>
+
                         </a>
                         <img src="#" width="180" height="200">
                         Цена
@@ -69,7 +70,7 @@
                     <dt class="elem">
                         <a href="#">
                             <strong>Название</strong>
-                            <span>Категория</span>
+
                         </a>
                         <img src="#" width="180" height="200">
                         Цена
@@ -77,7 +78,7 @@
                     <dt class="elem">
                         <a href="#">
                             <strong>Название</strong>
-                            <span>Категория</span>
+
                         </a>
                         <img src="#" width="180" height="200">
                         Цена
@@ -86,7 +87,7 @@
                     <dt class="elem">
                         <a href="#">
                             <strong>Название</strong>
-                            <span>Категория</span>
+
                         </a>
                         <img src="#" width="180" height="200">
                         Цена
@@ -101,7 +102,7 @@
         <div class="left_foot"></div>
         <div class="right_foot"></div>
     </div>
-</div>
+    </div>
 </body>
 
 </html>
