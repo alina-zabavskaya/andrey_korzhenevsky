@@ -9,11 +9,6 @@
         <div id="content">
             <fmt:message key="index.property_message"/>
         </div>
-<<<<<<< HEAD
 
-=======
-        <p>Test commit  9 !</p>
-        <p>Value = <c:out value="${value}"/></p>
->>>>>>> edc6ecd5558ec0593eb1749daa7ee250891a86c9
     </body>
 </html>
