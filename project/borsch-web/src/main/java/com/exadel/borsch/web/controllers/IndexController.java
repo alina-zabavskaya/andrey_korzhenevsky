@@ -20,11 +20,11 @@ public class IndexController {
         return "enter";
     }
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
-    public String handleRequest() {
-        ModelAndView model = new ModelAndView("home");
+    @RequestMapping(value = "/index", method = RequestMethod.GET)
+    public ModelAndView handleRequest() {
+        ModelAndView model = new ModelAndView("index");
         model.addObject("value", service.doSomeWork());
-        return "master";
+        return model;
     }
 
 }

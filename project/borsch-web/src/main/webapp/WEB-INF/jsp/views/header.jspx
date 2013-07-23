@@ -1,0 +1,12 @@
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" xmlns="http://www.w3.org/1999/xhtml" version="2.0">
+    <a class="logo" href="#"></a>
+
+    <div class="login_block">
+        <a href='/enter' class="href_white"> Войти</a>
+        <a href='#'>Зарегистрироваться</a>
+        <!-- <div>Зарегистрируйтесь или Войдите!</div>
+           <div>//поле для авторизациии//</div>
+           <div>//и регистрации//</div>
+           -->
+    </div>
+</jsp:root>
