@@ -1,19 +1,16 @@
 <jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" xmlns="http://www.w3.org/1999/xhtml" version="2.0">
-
     <div id="header">
-        <a class="logo" href="#"></a>
+        <div>
+            <a class="logo" href="#"></a>
+        </div>
 
         <div class="login_block">
             <div>
-                <a href='login_form/login.html' class="href_white"> Войти</a>
+                <a href='enter.page' class="href_white"> Войти</a>
             </div>
             <div>
                 <a href='#'>Зарегистрироваться</a>
             </div>
-            <!-- <div>Зарегистрируйтесь или Войдите!</div>
-               <div>//поле для авторизациии//</div>
-               <div>//и регистрации//</div>
-               -->
         </div>
     </div>
 

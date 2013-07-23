@@ -1,18 +1,19 @@
 <jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" xmlns="http://www.w3.org/1999/xhtml" version="2.0">
-    <div class="content">
-        <div id="auth_form">
-            <form>
-                <label>Имя:</label>
-                <input/>
-                <label>Пароль:</label>
-                <!--<p><a href="#">Забыли пароль?</a>-->
-                <input type="password"/>
+    ENTER
+    <!--<div class="content">-->
+    <!--<div id="auth_form">-->
+    <!--<form>-->
+    <!--<label>Имя:</label>-->
+    <!--<input/>-->
+    <!--<label>Пароль:</label>-->
+    <!--&lt;!&ndash;<p><a href="#">Забыли пароль?</a>&ndash;&gt;-->
+    <!--<input type="password"/>-->
 
-                <div id="lower">
-                    <input type="checkbox"/><label class="check">Замомнить меня</label>
-                    <input type="submit" value="Войти"/>
-                </div>
-            </form>
-        </div>
-    </div>
+    <!--<div id="lower">-->
+    <!--<input type="checkbox"/><label class="check">Замомнить меня</label>-->
+    <!--<input type="submit" value="Войти"/>-->
+    <!--</div>-->
+    <!--</form>-->
+    <!--</div>-->
+    <!--</div>-->
 </jsp:root>

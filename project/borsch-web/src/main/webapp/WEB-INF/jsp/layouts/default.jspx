@@ -14,7 +14,7 @@
     <body>
     <div id="page">
         <div class="wrp_ctr">
-            <tiles:insertAttribute name="header"/>
+            <tiles:insertAttribute name="header" ignore="true"/>
 
             <div id="mainbar">
                 <dl class="main_menu">
