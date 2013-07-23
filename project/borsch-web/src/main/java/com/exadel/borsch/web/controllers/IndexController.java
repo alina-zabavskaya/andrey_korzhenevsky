@@ -5,7 +5,6 @@ import com.exadel.borsch.service.SomeBusinessLogicService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.servlet.ModelAndView;
 
 /**
  * Simple index page controller
@@ -15,16 +14,13 @@ public class IndexController {
 
     private SomeBusinessLogicService service = ServiceFactory.getSomeBusinessLogicService();
 
-    @RequestMapping(value = "/enter", method = RequestMethod.GET)
-    public String showRegistrationForn() {
+    @RequestMapping(value = "enter.page", method = RequestMethod.GET)
+    public String showRegistrationForm() {
         return "enter";
     }
 
-    @RequestMapping(value = "/index", method = RequestMethod.GET)
-    public ModelAndView handleRequest() {
-        ModelAndView model = new ModelAndView("index");
-        model.addObject("value", service.doSomeWork());
-        return model;
+    @RequestMapping(value = "index.page", method = RequestMethod.GET)
+    public String handleRequest() {
+        return "index";
     }
-
 }

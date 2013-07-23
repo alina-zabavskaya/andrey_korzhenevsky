@@ -10,7 +10,7 @@ import org.springframework.test.web.server.MockMvc;
  * Base class fo unit tests with spring context.
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = {"classpath:applicationContext.xml", "classpath:app-servlet.xml"})
+@ContextConfiguration(locations = {"classpath:applicationContext.xml", "classpath:WEB-INF/app-servlet.xml"})
 public abstract class BaseSpringMvcTest {
 
 //    private org.springframework.web.context.WebApplicationContext wac = ;
