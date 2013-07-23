@@ -1,12 +1,12 @@
 <jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" xmlns="http://www.w3.org/1999/xhtml" version="2.0">
     <div id="header">
         <div>
-            <a class="logo" href="#"></a>
+            <a class="logo" href="${pageContext.servletContext.contextPath}/index"></a>
         </div>
 
         <div class="login_block">
             <div>
-                <a href='enter.page' class="href_white"> Войти</a>
+                <a href='${pageContext.servletContext.contextPath}/enter' class="href_white"> Войти</a>
             </div>
             <div>
                 <a href='#'>Зарегистрироваться</a>

@@ -14,13 +14,18 @@ public class IndexController {
 
     private SomeBusinessLogicService service = ServiceFactory.getSomeBusinessLogicService();
 
-    @RequestMapping(value = "enter.page", method = RequestMethod.GET)
+    @RequestMapping(value = "/enter", method = RequestMethod.GET)
     public String showRegistrationForm() {
         return "enter";
     }
 
-    @RequestMapping(value = "index.page", method = RequestMethod.GET)
+    @RequestMapping(value = "/index", method = RequestMethod.GET)
     public String handleRequest() {
+        return "index";
+    }
+
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public String indexRequest() {
         return "index";
     }
 }
