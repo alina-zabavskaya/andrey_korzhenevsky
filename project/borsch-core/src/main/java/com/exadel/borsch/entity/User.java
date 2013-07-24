@@ -5,6 +5,17 @@ public class User {
     private String login;
     private String password;
     private Integer role;
+    private String info;
+    private String email;
+
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
     public Integer getId() {
         return id;
@@ -46,5 +57,5 @@ public class User {
         this.info = info;
     }
 
-    private String info;
+
 }

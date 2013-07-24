@@ -6,7 +6,7 @@
                     <strong>Название</strong>
 
                 </a>
-                <img src="#" width="180" height="200"/>
+                <!--<img src="#" width="180" height="200"/>-->
                 Цена
             </dt>
             <dt class="elem">
@@ -14,7 +14,7 @@
                     <strong>Название</strong>
 
                 </a>
-                <img src="#" width="180" height="200"/>
+                <!--<img src="#" width="180" height="200"/>-->
                 Цена
             </dt>
             <dt class="elem">
@@ -22,7 +22,7 @@
                     <strong>Название</strong>
 
                 </a>
-                <img src="#" width="180" height="200"/>
+                <!--<img src="#" width="180" height="200"/>-->
                 Цена
             </dt>
             <dt class="clear"></dt>
@@ -31,7 +31,7 @@
                     <strong>Название</strong>
 
                 </a>
-                <img src="#" width="180" height="200"/>
+                <!--<img src="#" width="180" height="200"/>-->
                 Цена
             </dt>
         </dl>
