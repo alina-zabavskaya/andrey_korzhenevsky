@@ -1,6 +1,6 @@
 package com.exadel.borsch.web.controllers;
 
-import com.exadel.borsch.dao.UserDao;
+import com.exadel.borsch.dao.UserDAO;
 import com.exadel.borsch.service.ServiceFactory;
 import com.exadel.borsch.service.SomeBusinessLogicService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,9 +15,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class IndexController {
 
     @Autowired
-    private UserDao UserDaoImpl;
+    private UserDAO UserDaoImpl;
 
-    public void setUserDaoImpl(UserDao userDaoImpl) {
+    public void setUserDaoImpl(UserDAO userDaoImpl) {
         this.UserDaoImpl = userDaoImpl;
     }
 
