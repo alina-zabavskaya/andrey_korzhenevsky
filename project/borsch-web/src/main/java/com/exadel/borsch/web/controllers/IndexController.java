@@ -1,9 +1,6 @@
 package com.exadel.borsch.web.controllers;
 
-import com.exadel.borsch.dao.UserDAO;
-import com.exadel.borsch.service.ServiceFactory;
-import com.exadel.borsch.service.SomeBusinessLogicService;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.exadel.borsch.dao.impl.DishDAOImpl;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -14,24 +11,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class IndexController {
 
-    @Autowired
-    private UserDAO UserDaoImpl;
-
-    public void setUserDaoImpl(UserDAO userDaoImpl) {
-        this.UserDaoImpl = userDaoImpl;
-    }
-
-    private SomeBusinessLogicService service = ServiceFactory.getSomeBusinessLogicService();
+    // private SomeBusinessLogicService service = ServiceFactory.getSomeBusinessLogicService();
 
     @RequestMapping(value = "/enter", method = RequestMethod.GET)
     public String showRegistrationForm() {
-//        User user = new User();
-//        user.setLogin("Vasya");
-//        user.setPassword("asdasd");
-//        user.setRole(1);
-//        user.setEmail("email@mail.ru");
-//        user.setInfo("adasdasd");
-//        userDao.insert(user);
         return "enter";
     }
 
@@ -44,4 +27,7 @@ public class IndexController {
     public String indexRequest() {
         return "index";
     }
+
+    DishDAOImpl dishDAO;
+
 }

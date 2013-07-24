@@ -4,13 +4,11 @@ import com.exadel.borsch.dao.UserDAO;
 import com.exadel.borsch.entity.User;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.support.JdbcDaoSupport;
-import org.springframework.stereotype.Repository;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 
-@Repository
 public class UserDaoImpl extends JdbcDaoSupport implements UserDAO {
 
     private static final String SELECT_ALL = "SELECT * FROM user";

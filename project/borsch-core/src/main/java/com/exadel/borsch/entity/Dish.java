@@ -7,6 +7,14 @@ public class Dish {
     private String info;
     private String img;
 
+    public Dish(Integer id, String name, Integer price, String info, String img) {
+        this.id = id;
+        this.name = name;
+        this.price = price;
+        this.info = info;
+        this.img = img;
+    }
+
     public String getInfo() {
         return info;
     }

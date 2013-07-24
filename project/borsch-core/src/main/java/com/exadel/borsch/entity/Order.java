@@ -1,10 +1,11 @@
 package com.exadel.borsch.entity;
+
 import java.sql.Timestamp;
 
 public class Order {
     private Integer id;
-    private Integer user_id;
-    private Integer dish_id;
+    private Integer userId;
+    private Integer dishId;
     private Timestamp data;
     private Integer number;
 
@@ -24,20 +25,20 @@ public class Order {
         this.number = number;
     }
 
-    public Integer getDish_id() {
-        return dish_id;
+    public Integer getDishId() {
+        return dishId;
     }
 
-    public void setDish_id(Integer dish_id) {
-        this.dish_id = dish_id;
+    public void setDishId(Integer dishId) {
+        this.dishId = dishId;
     }
 
-    public Integer getUser_id() {
-        return user_id;
+    public Integer getUserId() {
+        return userId;
     }
 
-    public void setUser_id(Integer user_id) {
-        this.user_id = user_id;
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
 
     public Integer getId() {

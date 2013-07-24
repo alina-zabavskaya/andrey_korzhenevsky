@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
     <parent>
         <artifactId>borsch</artifactId>
@@ -8,30 +9,31 @@
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-	<groupId>com.exadel.borsch</groupId>
-	<artifactId>borsch-web</artifactId>
-	<packaging>war</packaging>
+    <groupId>com.exadel.borsch</groupId>
+    <artifactId>borsch-web</artifactId>
+    <packaging>war</packaging>
     <description>Module which contains all web application content, action
-        handlers/controllers and all referred to web layer</description>
-	<version>1.0-SNAPSHOT</version>
-	
+        handlers/controllers and all referred to web layer
+    </description>
+    <version>1.0-SNAPSHOT</version>
+
     <properties>
-		<jetty.version>6.1.4</jetty.version>
+        <jetty.version>6.1.4</jetty.version>
         <maven-jetty-plugin.version>6.1.24</maven-jetty-plugin.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	</properties>
-    
+    </properties>
+
     <repositories>
-		<repository>
-			<id>spring-repo</id>
-			<url>http://maven.springframework.org</url>
-		</repository>
+        <repository>
+            <id>spring-repo</id>
+            <url>http://maven.springframework.org</url>
+        </repository>
         <repository>
             <id>spring-maven-milestone</id>
             <name>Spring Maven Milestone Repository</name>
             <url>http://maven.springframework.org/milestone</url>
         </repository>
-	</repositories>
+    </repositories>
 
     <dependencies>
         <dependency>
@@ -50,6 +52,7 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
             <version>${spring.version}</version>
+            <!--<version>${spring.version}</version>-->
             <scope>test</scope>
         </dependency>
 
@@ -80,7 +83,7 @@
             <version>1.2</version>
         </dependency>
 
-         <dependency>
+        <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.8.1</version>
@@ -94,6 +97,25 @@
             <scope>test</scope>
         </dependency>
 
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>3.2.0.RELEASE</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.22</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-jpa</artifactId>
+            <version>1.2.0.RELEASE</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -123,5 +145,6 @@
 
         </plugins>
     </build>
+
 
 </project>
