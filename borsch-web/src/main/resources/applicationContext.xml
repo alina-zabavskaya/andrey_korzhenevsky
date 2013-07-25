@@ -20,5 +20,5 @@
         </property>
     </bean>
 
-    <bean id="dishService" class="com.exadel.borsch.service.DishServiceImpl"/>
+    <bean id="dishService" class="com.exadel.borsch.service.impl.DishServiceImpl"/>
 </beans>
