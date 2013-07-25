@@ -1,25 +1,14 @@
 package com.exadel.borsch.entity;
 
-import org.hibernate.validator.constraints.Email;
-import org.hibernate.validator.constraints.NotEmpty;
-
-import javax.validation.constraints.Size;
-
-
 public class Registration {
 
 
     private String userName;
 
-    @NotEmpty
-    @Size(min = 4, max = 20)
     private String password;
 
-    @NotEmpty
     private String confirmPassword;
 
-    @NotEmpty
-    @Email
     private String email;
 
 

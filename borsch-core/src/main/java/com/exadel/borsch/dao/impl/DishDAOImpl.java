@@ -8,11 +8,16 @@ import org.springframework.jdbc.core.support.JdbcDaoSupport;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Date;
 import java.util.List;
 
 
 public class DishDAOImpl extends JdbcDaoSupport implements DishDAO {
     private static final String QUERY_SELECT_ALL = "select id, name, price, info from dish";
+    private static final String QUERY_SELECT_BY_DATE =
+            "select d.id, d.name, d.price, d.info from dish d " +
+                    "inner join dish_access da on da.dish_id=d.id " +
+                    "where d.enabled=true and da.date=?";
 
     private static final String QUERY_DISH_BY_ID = QUERY_SELECT_ALL + " where id=?";
 
@@ -29,8 +34,7 @@ public class DishDAOImpl extends JdbcDaoSupport implements DishDAO {
                      resultSet.getInt("id"),
                      resultSet.getString("name"),
                      resultSet.getInt("price"),
-                     resultSet.getString("info"),
-                     resultSet.getString("img")
+                     resultSet.getString("info")
              );
          }
      };
@@ -60,6 +64,15 @@ public class DishDAOImpl extends JdbcDaoSupport implements DishDAO {
     @Override
     public void deleteDish(Integer id) {
         getJdbcTemplate().update(QUERY_DELETE_DISH, id);
+    }
+
+    @Override
+    public List<Dish> getProducts(Date selectedDate) {
+        return getJdbcTemplate().query(
+                QUERY_SELECT_BY_DATE,
+                dishRowMapper,
+                selectedDate
+        );
     }
 
     @Override

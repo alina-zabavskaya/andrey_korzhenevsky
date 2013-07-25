@@ -12,11 +12,7 @@
         <put-attribute name="body" value=""/>
     </definition>
 
-    <definition name="index" extends="default">
-        <put-attribute name="body" value="/WEB-INF/jsp/views/body.jspx"/>
-    </definition>
-
-    <definition name="enter" extends="default">
-        <put-attribute name="body" value="/WEB-INF/jsp/views/enter.jspx"/>
+    <definition name="dishes.list" extends="default">
+        <put-attribute name="body" value="/WEB-INF/jsp/views/dishes-list.jspx"/>
     </definition>
 </tiles-definitions>

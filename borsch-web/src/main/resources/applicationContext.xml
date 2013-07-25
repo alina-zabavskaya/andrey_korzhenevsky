@@ -15,15 +15,10 @@
     <bean id="properties" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
         <property name="locations">
             <list>
-                <value>classpath:application.properties</value>
+                <value>classpath:/application.properties</value>
             </list>
         </property>
     </bean>
 
-    <bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
-        <property name="basename" value="classpath:messages"/>
-        <property name="defaultEncoding" value="${source.encoding}"/>
-    </bean>
-
-
+    <bean id="dishService" class="com.exadel.borsch.service.DishServiceImpl"/>
 </beans>

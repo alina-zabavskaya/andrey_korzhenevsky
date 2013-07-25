@@ -1,6 +1,8 @@
 package com.exadel.borsch.dao;
 
 import com.exadel.borsch.entity.Dish;
+
+import java.util.Date;
 import java.util.List;
 
 public interface DishDAO {
@@ -10,4 +12,5 @@ public interface DishDAO {
     void saveDish(Dish dish);
     void deleteDish(Integer id);
 
+    List<Dish> getProducts(Date selectedDate);
 }
