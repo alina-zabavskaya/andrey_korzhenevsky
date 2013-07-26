@@ -1,0 +1,7 @@
+<Context>
+    <!--<Resource name="jdbc/borsh" auth="Container"-->
+              <!--type="javax.sql.DataSource" driverClassName="com.mysql.jdbc.Driver"-->
+              <!--url="jdbc:mysql://localhost:3306/borsh"-->
+              <!--username="root" password="1123272" maxActive="1" maxIdle="11"-->
+              <!--maxWait="-1"/>-->
+</Context>
