@@ -12,6 +12,7 @@
         <title>BORSH!</title>
     </head>
     <body>
+    Login <jsp:expression>request.getUserPrincipal()</jsp:expression>
     <div id="page">
         <div class="wrp_ctr">
             <tiles:insertAttribute name="header" ignore="true"/>

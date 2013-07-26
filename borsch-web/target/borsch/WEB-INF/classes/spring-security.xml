@@ -12,14 +12,13 @@
                            http://www.springframework.org/schema/mvc 
                            http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd">
     <security:global-method-security secured-annotations="enabled" />
-    <!--<security:http security="none" pattern="/login.jsp*"/>-->
+    <security:http security="none" pattern="/login.jsp*"/>
     <security:http security="none" pattern="/css/**"/>
     <security:http security="none" pattern="/img/**"/>
     <security:http security="none" pattern="/js/**"/>
     <mvc:annotation-driven />
     <context:annotation-config/>
 
-    <import resource="datasource.xml"/>
     <context:component-scan base-package="com.exadel.borsch.web.controllers"/>
 
 
@@ -30,18 +29,17 @@
 
     <security:http auto-config="true">
         <security:session-management session-fixation-protection="newSession"
-                                     invalid-session-url="/index">
+                                     invalid-session-url="/login.jsp">
             <!--<security:concurrency-control max-sessions="3" error-if-maximum-exceeded="true"/>-->
         </security:session-management>
+        <security:intercept-url pattern="/sec/**" access="ROLE_ADMIN" />
 
-        <security:intercept-url pattern="/admin/**" access="ROLE_ADMIN, ROLE_DEVELOPER, ROLE_EDITOR" />
-        <!--<security:intercept-url pattern="/**" access="ROLE_USER" />-->
+        <security:form-login
+                login-processing-url="/login"
+                login-page='/login.jsp'
+                default-target-url="/sec/menu/dishes.do" authentication-failure-url="/login.jsp?fail=true"/>
 
-        <security:form-login login-page='/enter'
-                             default-target-url="enter"
-                             authentication-failure-url="/loginfailed"/>
-
-        <security:logout logout-success-url="/login.jsp" invalidate-session="true"/>
+        <security:logout logout-url="/logout" logout-success-url="/login.jsp" invalidate-session="true"/>
 
     </security:http>
 
@@ -57,20 +55,20 @@
     </bean>
 
     <security:authentication-manager>
-        <security:authentication-provider>
-            <security:jdbc-user-service data-source-ref="dataSource"
-                                        users-by-username-query="
-                                        SELECT u.login AS username, password, 1 AS enabled
-                                        FROM user u WHERE login=?"
-                                        authorities-by-username-query="
-                                        SELECT u.login AS username, ur.authority FROM user u,
-                                        user_role ur
-                                        WHERE u.role = ur.role_id and u.login =? "
-                                        />
-        </security:authentication-provider>
-        <!--<security:authentication-provider user-service-ref="userDetailsService">-->
-            <!--<security:password-encoder ref="passwordEncoder"/>-->
+        <!--<security:authentication-provider>-->
+        <!--<security:jdbc-user-service data-source-ref="dataSource"-->
+        <!--users-by-username-query="-->
+        <!--SELECT u.login AS username, password, 1 AS enabled-->
+        <!--FROM user u WHERE login=?"-->
+        <!--authorities-by-username-query="-->
+        <!--SELECT u.login AS username, ur.authority FROM user u,-->
+        <!--user_role ur-->
+        <!--WHERE u.role = ur.role_id and u.login =? "-->
+        <!--/>-->
         <!--</security:authentication-provider>-->
+        <security:authentication-provider user-service-ref="userDetailsService">
+            <security:password-encoder ref="passwordEncoder"/>
+        </security:authentication-provider>
     </security:authentication-manager>
 
 </beans>

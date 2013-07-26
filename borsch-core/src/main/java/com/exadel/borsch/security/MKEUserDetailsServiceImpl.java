@@ -19,8 +19,8 @@ public class MKEUserDetailsServiceImpl implements UserDetailsService, Initializi
     private String adminUsername;
     private String adminPassword;
 
-    @Autowired
-    private UserService userService;
+//    @Autowired
+//    private UserService userService;
 
     public void setPasswordEncoder(PasswordEncoder passwordEncoder) {
         this.passwordEncoder = passwordEncoder;
@@ -41,7 +41,7 @@ public class MKEUserDetailsServiceImpl implements UserDetailsService, Initializi
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         final User user;
         final MKEUser mkeuser;
-        if (adminUsername.equals(username)) {
+//        if (adminUsername.equals(username)) {
             mkeuser = new MKEUser(
                     adminUsername,
                     adminPassword,
@@ -53,22 +53,22 @@ public class MKEUserDetailsServiceImpl implements UserDetailsService, Initializi
             );
             user = new User(null, adminUsername, null, "ROLE_ADMIN",null,null);
             mkeuser.setUser(user);
-        } else {
+//        } else {
 
-            user = userService.findUser(username);
-
-            mkeuser = new MKEUser(
-                    user.getLogin(),
-                    user.getPassword(),
-                    new ArrayList<GrantedAuthority>() {
-                        {
-                            add(new SimpleGrantedAuthority(user.getRole()));
-                        }
-                    }
-            );
-            user.setPassword(null);
-            mkeuser.setUser(user);
-        }
+//            user = userService.findUser(username);
+//
+//            mkeuser = new MKEUser(
+//                    user.getLogin(),
+//                    user.getPassword(),
+//                    new ArrayList<GrantedAuthority>() {
+//                        {
+//                            add(new SimpleGrantedAuthority(user.getRole()));
+//                        }
+//                    }
+//            );
+//            user.setPassword(null);
+//            mkeuser.setUser(user);
+//        }
 
         return mkeuser;
     }

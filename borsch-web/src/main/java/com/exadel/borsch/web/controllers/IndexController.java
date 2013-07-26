@@ -19,6 +19,7 @@ import java.util.Map;
  * Simple index page controller
  */
 @Controller
+@RequestMapping(value = "/sec/menu")
 public class IndexController {
     @Autowired
     DishService dishService;

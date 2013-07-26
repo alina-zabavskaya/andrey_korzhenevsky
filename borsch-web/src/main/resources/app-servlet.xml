@@ -9,7 +9,6 @@
     <context:annotation-config/>
     <context:component-scan base-package="com.exadel.borsch.web"/>
 
-
     <bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles2.TilesConfigurer">
         <property name="definitions" value="classpath:/layouts.xml"/>
         <property name="preparerFactoryClass"
