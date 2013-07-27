@@ -6,16 +6,16 @@
         <jsp:directive.page contentType="text/html;charset=UTF-8"/>
         <jsp:directive.page pageEncoding="UTF-8"/>
         <link rel="stylesheet" type="text/css" href="css/style.css"/>
-        <link rel="stylesheet" type="text/css" href="css/registration/styles.css"/>
-        <link rel="stylesheet" type="text/css" href="css/registration/reset.css"/>
-        <link rel="stylesheet" type="text/css" href="css/registration/animate.css"/>
+        <!--<link rel="stylesheet" type="text/css" href="css/registration/styles.css"/>-->
+        <!--<link rel="stylesheet" type="text/css" href="css/registration/reset.css"/>-->
+        <!--<link rel="stylesheet" type="text/css" href="css/registration/animate.css"/>-->
         <title>BORSH!</title>
     </head>
     <body>
-    Login <jsp:expression>request.getUserPrincipal()</jsp:expression>
+    <!--Login <jsp:expression>request.getUserPrincipal()</jsp:expression>-->
     <div id="page">
         <div class="wrp_ctr">
-            <tiles:insertAttribute name="header" ignore="true"/>
+            <tiles:insertAttribute name="header"/>
 
             <div id="mainbar">
                 <dl class="main_menu">

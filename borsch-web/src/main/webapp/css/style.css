@@ -116,7 +116,7 @@ a.logo {
     position: absolute;
     top: -21px;
     left: 0px;
-    background: url(/img/exadel.png) 0 0 no-repeat;
+    background: url(../img/exadel.png);
 }
 
 .left_panel {

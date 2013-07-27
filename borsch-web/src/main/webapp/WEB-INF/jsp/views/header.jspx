@@ -1,16 +1,30 @@
-<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" xmlns="http://www.w3.org/1999/xhtml" version="2.0">
-    <div id="header">
-        <div>
-            <a class="logo" href="${pageContext.servletContext.contextPath}/index"></a>
-        </div>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" xmlns="http://www.w3.org/1999/xhtml" version="2.0"
+          xmlns:security="http://www.springframework.org/security/tags"
+          xmlns:sec="http://www.springframework.org/security/tags">
 
-        <div class="login_block">
-            <div>
-                <a href='${pageContext.servletContext.contextPath}/enter' class="href_white"> Войти</a>
-            </div>
-            <div>
-                <a href='#'>Зарегистрироваться</a>
-            </div>
+    <div id="header">
+        <div id="div_logo">
+            <a id="a_logo" class="logo" href="${pageContext.servletContext.contextPath}/">.</a>
+        </div>
+        <div id="div_login_block" class="login_block">
+            <sec:authorize access="isAuthenticated()">
+                <sec:authentication property="principal.username" var="login"/>
+
+                <div id="div_login">
+                    <strong>${login}</strong>
+                </div>
+                <div id="div_logout">
+                    <a id="a_logout" href='${pageContext.servletContext.contextPath}/logout'>Выход</a>
+                </div>
+            </sec:authorize>
+            <security:authorize access="isAnonymous()">
+                <div id="enter">
+                    <a id="a_enter" href='${pageContext.servletContext.contextPath}/enter' class="href_white"> Войти</a>
+                </div>
+                <div>
+                    <a href='${pageContext.servletContext.contextPath}/registration'>Зарегистрироваться</a>
+                </div>
+            </security:authorize>
         </div>
     </div>
 
