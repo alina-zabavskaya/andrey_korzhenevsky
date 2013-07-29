@@ -24,4 +24,8 @@
     <definition name="enter" extends="default">
         <put-attribute name="body" value="/WEB-INF/jsp/views/enter.jspx"/>
     </definition>
+
+    <definition name="admin/showAddDishForm" extends="default">
+        <put-attribute name="body" value="/WEB-INF/jsp/views/admin/addDish.jspx"/>
+    </definition>
 </tiles-definitions>

@@ -4,7 +4,7 @@
 
     <div id="header">
         <div id="div_logo">
-            <a id="a_logo" class="logo" href="${pageContext.servletContext.contextPath}/">.</a>
+            <a id="a_logo" class="logo" href="${pageContext.servletContext.contextPath}/"><jsp:text /></a>
         </div>
         <div id="div_login_block" class="login_block">
             <sec:authorize access="isAuthenticated()">

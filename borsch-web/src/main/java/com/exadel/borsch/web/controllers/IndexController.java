@@ -1,6 +1,5 @@
 package com.exadel.borsch.web.controllers;
 
-import com.exadel.borsch.dao.impl.DishDAOImpl;
 import com.exadel.borsch.service.DishService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

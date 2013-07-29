@@ -23,7 +23,7 @@ public class DishDAOImpl extends JdbcDaoSupport implements DishDAO {
 
     private static final String QUERY_DELETE_DISH = "delete from dish where id=?";
 
-    private static final String QUERY_DISH_INSERT = "insert into dish (name, price, info) values(?,?,?) returning id";
+    private static final String QUERY_DISH_INSERT = "insert into dish (name, price, info) values(?,?,?)";
 
    // private static final String QUERY_DISH_UPDATE = "update dish set name=?, price=?, info=? where id=?";
 

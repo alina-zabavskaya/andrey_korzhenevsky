@@ -91,7 +91,7 @@ dl.main_menu dt a {
     height: 54px;
     line-height: 54px;
     font-size: 14px;
-    color: #2F72A0;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -254,4 +254,8 @@ ul.top-level li {
 #header .login_block div a {
     text-align: right;
 
+}
+
+.menu_a {
+   color: #fff;
 }

@@ -1,4 +1,5 @@
-<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" xmlns="http://www.w3.org/1999/xhtml" version="2.0">
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" xmlns="http://www.w3.org/1999/xhtml" version="2.0"
+        >
     <div class="content">
         <dl>
             <dt class="elem">
@@ -25,7 +26,7 @@
                 <img src="#" width="180" height="200"/>
                 Цена
             </dt>
-            <dt class="clear"></dt>
+            <dt class="clear"/>
             <dt class="elem">
                 <a href="#">
                     <strong>Название</strong>

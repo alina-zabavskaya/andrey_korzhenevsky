@@ -25,4 +25,11 @@ public class DishServiceImpl implements DishService {
     public List<Dish> list(Date selectedDate) {
         return dishDAO.getProducts(selectedDate);
     }
+
+    @Override
+    public void saveDish(Dish dish) {
+        dishDAO.saveDish(dish);
+    }
+
+
 }
