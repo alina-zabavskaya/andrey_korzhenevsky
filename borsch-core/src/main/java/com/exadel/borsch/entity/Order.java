@@ -9,7 +9,7 @@ public class Order {
     private Integer number;
 
     public Timestamp getData() {
-        return data;
+        return this.data;
     }
 
     public void setData(Timestamp data) {

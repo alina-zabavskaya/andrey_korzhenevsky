@@ -1,10 +1,14 @@
-#Tue Jul 30 09:47:21 FET 2013
+#Tue Jul 30 14:34:54 FET 2013
+D\:\\alina\\borsch\ returning\\andrey_korzhenevsky\\borsch-core\\src\\main\\java\\com\\exadel\\borsch\\service\\impl\\UserServiceImpl.java=1375182828952
 D\:\\alina\\borsch\ returning\\andrey_korzhenevsky\\borsch-core\\src\\main\\java\\com\\exadel\\borsch\\entity\\User.java=1375103284579
 D\:\\alina\\borsch\ returning\\andrey_korzhenevsky\\borsch-core\\src\\main\\java\\com\\exadel\\borsch\\entity\\Dish.java=1375114652494
 D\:\\alina\\borsch\ returning\\andrey_korzhenevsky\\borsch-core\\src\\main\\java\\com\\exadel\\borsch\\service\\DishService.java=1375114652496
 D\:\\alina\\borsch\ returning\\andrey_korzhenevsky\\borsch-core\\src\\main\\java\\com\\exadel\\borsch\\service\\UserService.java=1375103284586
 D\:\\alina\\borsch\ returning\\andrey_korzhenevsky\\borsch-core\\src\\main\\java\\com\\exadel\\borsch\\dao\\DishDAO.java=1375103284544
-D\:\\alina\\borsch\ returning\\andrey_korzhenevsky\\borsch-core\\src\\main\\java\\com\\exadel\\borsch\\entity\\Order.java=1375103284571
+D\:\\alina\\borsch\ returning\\andrey_korzhenevsky\\borsch-core\\src\\main\\java\\com\\exadel\\borsch\\entity\\Order.java=1375184083942
 D\:\\alina\\borsch\ returning\\andrey_korzhenevsky\\borsch-core\\src\\main\\java\\com\\exadel\\borsch\\entity\\Registration.java=1375103284575
 D\:\\alina\\borsch\ returning\\andrey_korzhenevsky\\borsch-core\\src\\main\\java\\com\\exadel\\borsch\\dao\\UserDAO.java=1375103284550
+D\:\\alina\\borsch\ returning\\andrey_korzhenevsky\\borsch-core\\src\\main\\java\\com\\exadel\\borsch\\dao\\impl\\DishDAOImpl.java=1375182427901
+D\:\\alina\\borsch\ returning\\andrey_korzhenevsky\\borsch-core\\src\\main\\java\\com\\exadel\\borsch\\service\\impl\\DishServiceImpl.java=1375182771823
+D\:\\alina\\borsch\ returning\\andrey_korzhenevsky\\borsch-core\\src\\main\\java\\com\\exadel\\borsch\\dao\\impl\\UserDAOImpl.java=1375182653013
 configuration*?=F9BFD51F625FF526EEB71A9E1B9598DA227C0F91

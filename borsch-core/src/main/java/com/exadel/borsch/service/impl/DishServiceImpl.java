@@ -12,7 +12,7 @@ import java.util.List;
 
 public class DishServiceImpl implements DishService {
     @Autowired
-    DishDAO dishDAO;
+    private DishDAO dishDAO;
 
     @Transactional(propagation = Propagation.NEVER, readOnly = true)
     @Override
