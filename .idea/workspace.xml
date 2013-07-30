@@ -2,84 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1247cfe1-0ef8-4806-9b04-d3165fb375e8" name="Default" comment="almost working project">
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch.war" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\META-INF\context.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\classes\app-servlet.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\classes\application.properties" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\classes\applicationContext.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\classes\com\exadel\borsch\web\controllers\IndexController.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\classes\datasource.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\classes\layouts.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\classes\log4j.properties" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\classes\messages.properties" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\classes\spring-security.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\decorators.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\jsp\decorators\master.jsp" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\jsp\home.jsp" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\jsp\layouts\default.jspx" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\jsp\views\dishes-list.jspx" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\jsp\views\footer.jspx" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\jsp\views\header.jspx" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\jsp\views\navigation.jspx" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\lib\aopalliance-1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\lib\borsch-core-1.0-SNAPSHOT.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\lib\commons-beanutils-1.8.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\lib\commons-digester-2.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\lib\commons-logging-1.1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\lib\jackson-core-asl-1.9.9.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\lib\jackson-mapper-asl-1.9.9.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\lib\jackson-xc-1.9.9.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\lib\jcl-over-slf4j-1.7.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\lib\jstl-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\lib\log4j-1.2.16.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\lib\mysql-connector-java-5.1.25.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\lib\slf4j-api-1.7.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\lib\spring-aop-3.1.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\lib\spring-asm-3.1.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\lib\spring-beans-3.1.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\lib\spring-context-3.1.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\lib\spring-context-support-3.1.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\lib\spring-core-3.1.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\lib\spring-expression-3.1.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\lib\spring-jdbc-3.0.7.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\lib\spring-security-acl-3.1.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\lib\spring-security-config-3.1.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\lib\spring-security-core-3.1.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\lib\spring-security-taglibs-3.1.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\lib\spring-security-web-3.1.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\lib\spring-tx-3.0.7.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\lib\spring-web-3.1.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\lib\spring-webmvc-3.1.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\lib\tiles-api-2.2.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\lib\tiles-core-2.2.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\lib\tiles-jsp-2.2.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\lib\tiles-servlet-2.2.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\lib\tiles-template-2.2.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\WEB-INF\web.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\css\registration\animate.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\css\registration\reset.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\css\registration\styles.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\css\style.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\img\exadel.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\borsch\login.jsp" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\classes\app-servlet.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\classes\applicationContext.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\classes\com\exadel\borsch\web\controllers\IndexController.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\classes\datasource.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\classes\layouts.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\classes\log4j.properties" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\classes\messages.properties" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\classes\spring-security.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\test-classes\app-servlet.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\test-classes\com\exadel\borsch\web\controllers\BaseSpringMvcTest.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\target\test-classes\com\exadel\borsch\web\controllers\TestClass.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/borsch-web/src/main/resources/applicationContext.xml" afterPath="$PROJECT_DIR$/project/borsch-web/src/main/resources/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-web/borsch-web.iml" afterPath="$PROJECT_DIR$/borsch-web/borsch-web.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-web/checkstyle.xml" afterPath="$PROJECT_DIR$/borsch-web/checkstyle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/borsch-web/src/main/webapp/WEB-INF/jsp/home.jsp" afterPath="$PROJECT_DIR$/project/borsch-web/src/main/webapp/WEB-INF/jsp/home.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/borsch-web/src/main/webapp/WEB-INF/jsp/decorators/master.jsp" afterPath="$PROJECT_DIR$/project/borsch-web/src/main/webapp/WEB-INF/jsp/decorators/master.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/borsch-web/pom.xml" afterPath="$PROJECT_DIR$/project/borsch-web/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/borsch-web/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/project/borsch-web/src/main/webapp/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/borsch-web/src/main/java/com/exadel/borsch/web/controllers/AdminController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/admin/addDish.jspx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="borsch.iws" />
@@ -204,19 +128,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="default.jspx" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="default.jspx" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/layouts/default.jspx">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="5" selection-start="56" selection-end="56" vertical-scroll-proportion="0.029513888">
+            <state line="1" column="5" selection-start="56" selection-end="56" vertical-scroll-proportion="-0.65384614">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DishService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/service/DishService.java">
+      <file leaf-file-name="workspace.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="19" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -622,6 +546,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="borsch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="andrey_korzhenevsky" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".idea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -1017,7 +955,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1618" height="870" extended-state="1" />
+    <frame x="-9" y="-9" width="1618" height="870" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1038,7 +976,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30501932" sideWeight="0.67045456" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32820514" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25546977" sideWeight="0.67045456" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25546977" sideWeight="0.67045456" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3934659" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1114,11 +1052,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/borsch-web/src/main/webapp/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="56" selection-start="1488" selection-end="1488" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/header.jspx">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="62" selection-start="688" selection-end="688" vertical-scroll-proportion="0.0">
@@ -1213,7 +1146,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/layouts/default.jspx">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="5" selection-start="56" selection-end="56" vertical-scroll-proportion="0.029513888">
+        <state line="1" column="5" selection-start="56" selection-end="56" vertical-scroll-proportion="-0.65384614">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
