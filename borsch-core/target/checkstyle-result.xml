@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="5.5">
+<file name="D:\alina\borsch returning\andrey_korzhenevsky\borsch-core\src\main\java\com\exadel\borsch\dao\DishDAO.java">
+</file>
+<file name="D:\alina\borsch returning\andrey_korzhenevsky\borsch-core\src\main\java\com\exadel\borsch\dao\impl\DishDAOImpl.java">
+</file>
+<file name="D:\alina\borsch returning\andrey_korzhenevsky\borsch-core\src\main\java\com\exadel\borsch\dao\impl\UserDAOImpl.java">
+</file>
+<file name="D:\alina\borsch returning\andrey_korzhenevsky\borsch-core\src\main\java\com\exadel\borsch\dao\UserDAO.java">
+</file>
+<file name="D:\alina\borsch returning\andrey_korzhenevsky\borsch-core\src\main\java\com\exadel\borsch\entity\Dish.java">
+</file>
+<file name="D:\alina\borsch returning\andrey_korzhenevsky\borsch-core\src\main\java\com\exadel\borsch\entity\Order.java">
+</file>
+<file name="D:\alina\borsch returning\andrey_korzhenevsky\borsch-core\src\main\java\com\exadel\borsch\entity\Registration.java">
+</file>
+<file name="D:\alina\borsch returning\andrey_korzhenevsky\borsch-core\src\main\java\com\exadel\borsch\entity\User.java">
+</file>
+<file name="D:\alina\borsch returning\andrey_korzhenevsky\borsch-core\src\main\java\com\exadel\borsch\service\DishService.java">
+</file>
+<file name="D:\alina\borsch returning\andrey_korzhenevsky\borsch-core\src\main\java\com\exadel\borsch\service\impl\DishServiceImpl.java">
+</file>
+<file name="D:\alina\borsch returning\andrey_korzhenevsky\borsch-core\src\main\java\com\exadel\borsch\service\impl\UserServiceImpl.java">
+</file>
+<file name="D:\alina\borsch returning\andrey_korzhenevsky\borsch-core\src\main\java\com\exadel\borsch\service\UserService.java">
+</file>
+</checkstyle>
