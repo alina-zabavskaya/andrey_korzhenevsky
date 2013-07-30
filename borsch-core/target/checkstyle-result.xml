@@ -3,8 +3,20 @@
 <file name="D:\alina\borsch returning\andrey_korzhenevsky\borsch-core\src\main\java\com\exadel\borsch\dao\DishDAO.java">
 </file>
 <file name="D:\alina\borsch returning\andrey_korzhenevsky\borsch-core\src\main\java\com\exadel\borsch\dao\impl\DishDAOImpl.java">
+<error line="18" column="65" severity="error" message="&apos;+&apos; should be on a new line." source="com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"/>
+<error line="19" column="69" severity="error" message="&apos;+&apos; should be on a new line." source="com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"/>
 </file>
 <file name="D:\alina\borsch returning\andrey_korzhenevsky\borsch-core\src\main\java\com\exadel\borsch\dao\impl\UserDAOImpl.java">
+<error line="13" column="67" severity="error" message="&apos;{&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="15" column="55" severity="error" message="&apos;+&apos; should be on a new line." source="com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"/>
+<error line="16" column="28" severity="error" message="&apos;+&apos; should be on a new line." source="com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"/>
+<error line="17" column="34" severity="error" message="&apos;+&apos; should be on a new line." source="com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"/>
+<error line="18" column="40" severity="error" message="&apos;+&apos; should be on a new line." source="com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"/>
+<error line="19" column="32" severity="error" message="&apos;+&apos; should be on a new line." source="com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"/>
+<error line="20" column="32" severity="error" message="&apos;+&apos; should be on a new line." source="com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"/>
+<error line="21" column="34" severity="error" message="&apos;+&apos; should be on a new line." source="com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"/>
+<error line="34" severity="error" message="Line is longer than 120 characters." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="38" column="35" severity="error" message="Name &apos;USER_ROW_MAPPER&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"/>
 </file>
 <file name="D:\alina\borsch returning\andrey_korzhenevsky\borsch-core\src\main\java\com\exadel\borsch\dao\UserDAO.java">
 </file>
@@ -19,8 +31,12 @@
 <file name="D:\alina\borsch returning\andrey_korzhenevsky\borsch-core\src\main\java\com\exadel\borsch\service\DishService.java">
 </file>
 <file name="D:\alina\borsch returning\andrey_korzhenevsky\borsch-core\src\main\java\com\exadel\borsch\service\impl\DishServiceImpl.java">
+<error line="15" column="13" severity="error" message="Variable &apos;dishDAO&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
 </file>
 <file name="D:\alina\borsch returning\andrey_korzhenevsky\borsch-core\src\main\java\com\exadel\borsch\service\impl\UserServiceImpl.java">
+<error line="14" column="52" severity="error" message="&apos;{&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="15" column="20" severity="error" message="Name &apos;LOGGER&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"/>
+<error line="17" column="13" severity="error" message="Variable &apos;userDAO&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
 </file>
 <file name="D:\alina\borsch returning\andrey_korzhenevsky\borsch-core\src\main\java\com\exadel\borsch\service\UserService.java">
 </file>

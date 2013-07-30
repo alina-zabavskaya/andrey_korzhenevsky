@@ -26,6 +26,7 @@ public class DishServiceImpl implements DishService {
         return dishDAO.getProducts(selectedDate);
     }
 
+    @Transactional(propagation = Propagation.NEVER, readOnly = true)
     @Override
     public void saveDish(Dish dish) {
         dishDAO.saveDish(dish);
