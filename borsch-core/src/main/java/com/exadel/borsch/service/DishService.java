@@ -8,5 +8,4 @@ import java.util.List;
 public interface DishService {
     List<Dish> list();
     List<Dish> list(Date selectedDate);
-    void saveDish(Dish dish);
 }

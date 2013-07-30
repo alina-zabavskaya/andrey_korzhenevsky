@@ -1,5 +1,6 @@
 package com.exadel.borsch.web.controllers;
 
+import com.exadel.borsch.dao.impl.DishDAOImpl;
 import com.exadel.borsch.service.DishService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -26,7 +27,7 @@ public class IndexController {
     DishService dishService;
 
     @RequestMapping(value = "/sec/menu/dishes/{date}", method = RequestMethod.GET)
-    public ModelAndView dishes(@PathVariable() String date) {
+    public ModelAndView dishes(@PathVariable String date) {
         SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("dd-MM-yyyy");
         Date selectedDate;
         if (date == null) {
@@ -42,6 +43,13 @@ public class IndexController {
 //        params.put("dishes", dishService.list(selectedDate));
         params.put("dishes", dishService.list());
         return new ModelAndView("dishes.list", params);
+    }
+
+    @RequestMapping(value = "/sec/menu/dishes_user/{date}", method = RequestMethod.GET)
+    public ModelAndView userdishes(@PathVariable String date) {
+        Map params = new HashMap();
+        params.put("dishes", dishService.list());
+        return new ModelAndView("dishes.user", params);
     }
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
@@ -69,4 +77,6 @@ public class IndexController {
     public String logout(ModelMap model) {
         return "enter";
     }
+
+
 }

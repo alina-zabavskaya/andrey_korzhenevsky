@@ -1,17 +1,11 @@
 <jsp:root xmlns:jsp="http://java.sun.com/JSP/Page"
           xmlns="http://www.w3.org/1999/xhtml"
-          version="2.0" xmlns:tiles="http://tiles.apache.org/tags-tiles"
-          xmlns:sec="http://www.springframework.org/security/tags">
+          version="2.0" xmlns:tiles="http://tiles.apache.org/tags-tiles">
     <html>
     <head>
         <jsp:directive.page contentType="text/html;charset=UTF-8"/>
         <jsp:directive.page pageEncoding="UTF-8"/>
-        <link rel="stylesheet" type="text/css" href="${pageContext.servletContext.contextPath}/css/style.css/"/>
-        <link rel="stylesheet" type="text/css" href="${pageContext.servletContext.contextPath}/css/bootstrap-responsive.css"/>
-        <!--<link rel="stylesheet" type="text/css" href="${pageContext.servletContext.contextPath}/css/bootstrap-responsive.min.css"/>-->
-        <link rel="stylesheet" type="text/css" href="${pageContext.servletContext.contextPath}/css/bootstrap.css"/>
-        <!--<link rel="apple-touch-icon-precomposed" sizes="72x72" href="${pageContext.servletContext.contextPath}/img/glyphicons-halflings-white.png"/>-->
-        <!--<link rel="stylesheet" type="text/css" href="${pageContext.servletContext.contextPath}/css/bootstrap.min.css"/>-->
+        <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/style.css"/>
         <!--<link rel="stylesheet" type="text/css" href="css/registration/styles.css"/>-->
         <!--<link rel="stylesheet" type="text/css" href="css/registration/reset.css"/>-->
         <!--<link rel="stylesheet" type="text/css" href="css/registration/animate.css"/>-->
@@ -19,12 +13,6 @@
     </head>
     <body>
     <!--Login <jsp:expression>request.getUserPrincipal()</jsp:expression>-->
-    <!--<sec:authorize access="isAuthenticated()">-->
-    <!--<sec:authorize access="USER_ADMIN">-->
-    <!--<a href="/admin/adddish">Test</a>-->
-    <!--</sec:authorize>-->
-    <!--</sec:authorize>-->
-
     <div id="page">
         <div class="wrp_ctr">
             <tiles:insertAttribute name="header"/>
@@ -33,13 +21,7 @@
                 <dl class="main_menu">
                     <dt></dt>
                     <!-- ... -->
-                    <sec:authorize access="hasRole('ROLE_ADMIN')">
-                        <a class="menu_a"
-                           href="${pageContext.servletContext.contextPath}/admin/adddish">Добавить блюдо</a>
-                    </sec:authorize>
                 </dl>
-
-
             </div>
             <div id="maincontent">
                 <tiles:insertAttribute name="left_panel"/>

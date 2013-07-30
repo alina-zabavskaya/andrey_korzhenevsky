@@ -12,7 +12,7 @@ import java.util.List;
 
 public class DishServiceImpl implements DishService {
     @Autowired
-    private DishDAO dishDAO;
+    DishDAO dishDAO;
 
     @Transactional(propagation = Propagation.NEVER, readOnly = true)
     @Override
@@ -25,12 +25,4 @@ public class DishServiceImpl implements DishService {
     public List<Dish> list(Date selectedDate) {
         return dishDAO.getProducts(selectedDate);
     }
-
-    @Transactional(propagation = Propagation.NEVER, readOnly = true)
-    @Override
-    public void saveDish(Dish dish) {
-        dishDAO.saveDish(dish);
-    }
-
-
 }

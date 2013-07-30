@@ -47,8 +47,7 @@
                                      invalid-session-url="/">
             <!--<security:concurrency-control max-sessions="3" error-if-maximum-exceeded="true"/>-->
         </security:session-management>
-        <security:intercept-url pattern="/" access="ROLE_ADMIN, ROLE_USER"/>
-        <security:intercept-url pattern="/admin/**" access="ROLE_ADMIN, ROLE_USER"/>
+        <security:intercept-url pattern="/admin/**" access="ROLE_ADMIN"/>
         <!--<security:intercept-url pattern="/**" access="ROLE_USER" />-->
 
         <security:form-login login-page="/enter" default-target-url="/enter" authentication-failure-url="/loginfailed"/>
