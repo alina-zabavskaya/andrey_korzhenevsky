@@ -263,14 +263,11 @@ ul.top-level li {
 
 
 
-#maincontent .span{
+#maincontent .span1{
     margin-top: 20px;
 }
-#enter .href-white{
+ .enter-registration{
     color: #ffffff;
     font-family: "Comic Sans MS";
 }
-.registration{
-    color: #ffffff;
-    font-family: "Comic Sans MS";
-}
+

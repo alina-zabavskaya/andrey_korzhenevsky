@@ -16,6 +16,9 @@
         </param-value>
     </context-param>
 
+    <listener>
+        <listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
+    </listener>
 
     <listener>
         <listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>
@@ -42,7 +45,10 @@
         <init-param>
             <param-name>contextConfigLocation</param-name>
             <param-value>
-                classpath:/app-servlet.xml
+                classpath:/app-servlet.xml,
+                classpath:/datasource.xml,
+                classpath:/spring-security.xml,
+                classpath:/applicationContext.xml
             </param-value>
             <!--<param-value>-->
                 <!--classpath:/app-servlet.xml,-->

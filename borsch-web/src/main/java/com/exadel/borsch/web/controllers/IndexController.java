@@ -26,7 +26,7 @@ public class IndexController {
     DishService dishService;
 
     @RequestMapping(value = "/sec/menu/dishes/{date}", method = RequestMethod.GET)
-    public ModelAndView dishes(@PathVariable String date) {
+    public ModelAndView dishes(@PathVariable() String date) {
         SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("dd-MM-yyyy");
         Date selectedDate;
         if (date == null) {

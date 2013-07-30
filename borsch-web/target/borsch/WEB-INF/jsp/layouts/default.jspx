@@ -10,6 +10,7 @@
         <link rel="stylesheet" type="text/css" href="${pageContext.servletContext.contextPath}/css/bootstrap-responsive.css"/>
         <!--<link rel="stylesheet" type="text/css" href="${pageContext.servletContext.contextPath}/css/bootstrap-responsive.min.css"/>-->
         <link rel="stylesheet" type="text/css" href="${pageContext.servletContext.contextPath}/css/bootstrap.css"/>
+        <!--<link rel="apple-touch-icon-precomposed" sizes="72x72" href="${pageContext.servletContext.contextPath}/img/glyphicons-halflings-white.png"/>-->
         <!--<link rel="stylesheet" type="text/css" href="${pageContext.servletContext.contextPath}/css/bootstrap.min.css"/>-->
         <!--<link rel="stylesheet" type="text/css" href="css/registration/styles.css"/>-->
         <!--<link rel="stylesheet" type="text/css" href="css/registration/reset.css"/>-->

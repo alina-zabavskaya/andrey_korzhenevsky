@@ -4,7 +4,9 @@
 
     <div id="header">
         <div id="div_logo">
-            <a id="a_logo" class="logo" href="${pageContext.servletContext.contextPath}/"><jsp:text /></a>
+            <a id="a_logo" class="logo" href="${pageContext.servletContext.contextPath}/">
+                <img src="${pageContext.servletContext.contextPath}/img/exadel.png"/>
+            </a>
         </div>
         <div id="div_login_block" class="login_block">
             <sec:authorize access="isAuthenticated()">
@@ -19,10 +21,10 @@
             </sec:authorize>
             <security:authorize access="isAnonymous()">
                 <div id="enter">
-                    <a href='${pageContext.servletContext.contextPath}/enter' class="href-white"> Войти</a>
+                    <a href='${pageContext.servletContext.contextPath}/enter' class="enter-registration"> Войти</a>
                 </div>
                 <div>
-                    <a href='${pageContext.servletContext.contextPath}/registration' class= "registration">Зарегистрироваться</a>
+                    <a href='${pageContext.servletContext.contextPath}/registration' class= "enter-registration">Зарегистрироваться</a>
                 </div>
             </security:authorize>
         </div>
