@@ -11,10 +11,10 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
-public class UserServiceImpl implements UserService {
-    private Logger logger = LoggerFactory.getLogger(UserServiceImpl.class);
+public class UserServiceImpl implements UserService{
+    private Logger LOGGER = LoggerFactory.getLogger(UserServiceImpl.class);
     @Autowired
-    private UserDAO userDAO;
+    UserDAO userDAO;
 
     @Transactional(propagation = Propagation.NEVER, readOnly = true)
     @Override
