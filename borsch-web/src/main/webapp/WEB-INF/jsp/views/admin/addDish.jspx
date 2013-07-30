@@ -5,18 +5,19 @@
         <c:if test="${not empty success}">
            <c:out value="${success}"/>
         </c:if>
-        <form method="post" action="${pageContext.servletContext.contextPath}/admin/adddish">
+        <div class="span3" >
+        <form method="post" action="${pageContext.servletContext.contextPath}/admin/adddish" class="form-horizontal">
             <ul>
                 <li>
-                    <span>Название</span>
+                    Название
                     <input name="name"/>
                 </li>
                 <li>
-                    <span>Цена</span>
+                    Цена
                     <input name="price"/>
                 </li>
                 <li>
-                    <span>Информация</span>
+                    Информация
                     <textarea name="info">
                         <jsp:text/>
                     </textarea>
@@ -26,6 +27,6 @@
                 </li>
             </ul>
         </form>
-
+     </div>
     </div>
 </jsp:root>

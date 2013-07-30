@@ -8,7 +8,6 @@
         <jsp:directive.page pageEncoding="UTF-8"/>
         <link rel="stylesheet" type="text/css" href="${pageContext.servletContext.contextPath}/css/style.css/"/>
         <link rel="stylesheet" type="text/css" href="${pageContext.servletContext.contextPath}/css/bootstrap-responsive.css"/>
-        <!--<link rel="stylesheet" type="text/css" href="${pageContext.servletContext.contextPath}/css/bootstrap-responsive.min.css"/>-->
         <link rel="stylesheet" type="text/css" href="${pageContext.servletContext.contextPath}/css/bootstrap.css"/>
         <!--<link rel="apple-touch-icon-precomposed" sizes="72x72" href="${pageContext.servletContext.contextPath}/img/glyphicons-halflings-white.png"/>-->
         <!--<link rel="stylesheet" type="text/css" href="${pageContext.servletContext.contextPath}/css/bootstrap.min.css"/>-->
@@ -29,18 +28,43 @@
         <div class="wrp_ctr">
             <tiles:insertAttribute name="header"/>
 
-            <div id="mainbar">
-                <dl class="main_menu">
-                    <dt></dt>
-                    <!-- ... -->
-                    <sec:authorize access="hasRole('ROLE_ADMIN')">
-                        <a class="menu_a"
-                           href="${pageContext.servletContext.contextPath}/admin/adddish">Добавить блюдо</a>
-                    </sec:authorize>
-                </dl>
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <div class="container">
 
+                        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
 
+                        <!-- Be sure to leave the brand out there if you want it shown -->
+                        <a class="brand" href="${pageContext.servletContext.contextPath}/admin/adddish">Добавить блюдо</a>
+                        <a class="brand" href="${pageContext.servletContext.contextPath}">Меню</a>
+
+                        <!-- Everything you want hidden at 940px or less, place within here -->
+                        <div class="nav-collapse">
+                            <!-- .nav, .navbar-search, .navbar-form, etc -->
+                        </div>
+
+                    </div>
+                </div>
             </div>
+
+            <!--<div id="mainbar">-->
+                <!--<dl class="main_menu">-->
+                    <!--<dt></dt>-->
+                    <!--&lt;!&ndash; ... &ndash;&gt;-->
+                    <!--<sec:authorize access="hasRole('ROLE_ADMIN')">-->
+
+                        <!--<a class="menu_a"-->
+                           <!--href="${pageContext.servletContext.contextPath}/admin/adddish">Добавить блюдо</a>-->
+                    <!--</sec:authorize>-->
+                <!--</dl>-->
+
+
+            <!--</div>-->
             <div id="maincontent">
                 <tiles:insertAttribute name="left_panel"/>
                 <tiles:insertAttribute name="body"/>

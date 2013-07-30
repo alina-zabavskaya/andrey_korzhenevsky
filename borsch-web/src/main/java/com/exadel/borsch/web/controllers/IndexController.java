@@ -23,17 +23,17 @@ import java.util.Map;
 //@RequestMapping(value = "/borsch-web")
 public class IndexController {
     @Autowired
-    DishService dishService;
+    private DishService dishService;
 
     @RequestMapping(value = "/sec/menu/dishes/{date}", method = RequestMethod.GET)
     public ModelAndView dishes(@PathVariable() String date) {
-        SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("dd-MM-yyyy");
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
         Date selectedDate;
         if (date == null) {
             selectedDate = new Date();
         } else {
             try {
-                selectedDate = DATE_FORMAT.parse(date);
+                selectedDate = dateFormat.parse(date);
             } catch (ParseException e) {
                 selectedDate = new Date();
             }
@@ -45,13 +45,16 @@ public class IndexController {
     }
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
-    public String index(ModelMap model, Principal principal) {
+    public ModelAndView index(ModelMap model, Principal principal) {
         String name = null;
         if (principal != null) {
             name = principal.getName();
         }
         model.addAttribute("username", name);
-        return "index";
+        Map params = new HashMap();
+//        params.put("dishes", dishService.list(selectedDate));
+        params.put("dishes", dishService.list());
+        return new ModelAndView("index", params);
     }
 
     @RequestMapping(value = "/enter", method = RequestMethod.GET)

@@ -309,8 +309,8 @@
                     <execution>
                         <phase>process-sources</phase>
                         <goals>
-                            <goal>findbugs</goal>
-                            <goal>check</goal>
+                            <!--<goal>findbugs</goal>-->
+                            <!--<goal>check</goal>-->
                         </goals>
                     </execution>
                 </executions>

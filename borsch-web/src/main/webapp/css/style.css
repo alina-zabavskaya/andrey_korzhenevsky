@@ -131,8 +131,8 @@ a.logo {
 .content {
     float: left;
     width: 79%;
-    border-top: 25px solid #2F72A0;
-    border-left: 2px solid grey;
+    /*border-top: 25px solid #2F72A0;*/
+    /*border-left: 2px solid grey;*/
     /* border-right: 2px solid grey;*/
     min-height: 500px;
     margin: 0;
@@ -261,12 +261,12 @@ ul.top-level li {
 }
 
 
+/*Alina*/
 
-
-#maincontent .span1{
+#maincontent .span3{
     margin-top: 20px;
 }
- .enter-registration{
+ .login-registration{
     color: #ffffff;
     font-family: "Comic Sans MS";
 }

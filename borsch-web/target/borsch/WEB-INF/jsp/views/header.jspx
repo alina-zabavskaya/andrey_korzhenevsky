@@ -12,19 +12,19 @@
             <sec:authorize access="isAuthenticated()">
                 <sec:authentication property="principal.username" var="login"/>
 
-                <div id="div_login">
+                <div id="div_login" class = "login-registration">
                     <strong>${login}</strong>
                 </div>
-                <div id="div_logout">
-                    <a id="a_logout" href='${pageContext.servletContext.contextPath}/logout'>Выход</a>
+                <div id="div_logout" >
+                    <a id="a_logout" href='${pageContext.servletContext.contextPath}/logout' class = "login-registration">Выход</a>
                 </div>
             </sec:authorize>
             <security:authorize access="isAnonymous()">
                 <div id="enter">
-                    <a href='${pageContext.servletContext.contextPath}/enter' class="enter-registration"> Войти</a>
+                    <a href='${pageContext.servletContext.contextPath}/enter' class="login-registration"> Войти</a>
                 </div>
                 <div>
-                    <a href='${pageContext.servletContext.contextPath}/registration' class= "enter-registration">Зарегистрироваться</a>
+                    <a href='${pageContext.servletContext.contextPath}/registration' class= "login-registration">Зарегистрироваться</a>
                 </div>
             </security:authorize>
         </div>

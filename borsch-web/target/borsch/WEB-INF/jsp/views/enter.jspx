@@ -8,18 +8,18 @@
         </div>
     </c:if>
 
-    <div class="span1">
+    <div class="span3">
     <form name='f' action="${url}" method='post' class="form-horizontal" >
-            <div class="control-group">
+            <div class="control-group" >
                 <label class="control-label" for="inputEmail">Login</label>
                 <div class="controls">
-                    <input type="text" id="inputEmail" placeholder="Login" name="j_username"/>
+                    <input type="text" id="inputEmail" placeholder="Login" name="j_username" value="admin"/>
                 </div>
             </div>
             <div class="control-group">
                 <label class="control-label" for="inputPassword">Пароль</label>
                 <div class="controls">
-                    <input type="password" id="inputPassword" placeholder="Пароль" name="j_password"/>
+                    <input type="password" id="inputPassword" placeholder="Пароль" name="j_password" value="admin"/>
                 </div>
             </div>
             <div class="control-group">
