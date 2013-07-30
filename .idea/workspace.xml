@@ -7,21 +7,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/service/DishService.java" afterPath="$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/service/DishService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/service/impl/DishServiceImpl.java" afterPath="$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/service/impl/DishServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-web/src/main/java/com/exadel/borsch/web/controllers/IndexController.java" afterPath="$PROJECT_DIR$/borsch-web/src/main/java/com/exadel/borsch/web/controllers/IndexController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/entity/Order.java" afterPath="$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/entity/Order.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/dao/impl/UserDAOImpl.java" afterPath="$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/dao/impl/UserDAOImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/service/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/service/impl/UserServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/admin/addDish.jspx" afterPath="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/admin/addDish.jspx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-web/src/main/resources/app-servlet.xml" afterPath="$PROJECT_DIR$/borsch-web/src/main/resources/app-servlet.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/body.jspx" afterPath="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/body.jspx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-web/src/main/resources/datasource.xml" afterPath="$PROJECT_DIR$/borsch-web/src/main/resources/datasource.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/layouts/default.jspx" afterPath="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/layouts/default.jspx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/enter.jspx" afterPath="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/enter.jspx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/header.jspx" afterPath="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/header.jspx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-web/src/main/resources/layouts.xml" afterPath="$PROJECT_DIR$/borsch-web/src/main/resources/layouts.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-web/src/main/resources/log4j.properties" afterPath="$PROJECT_DIR$/borsch-web/src/main/resources/log4j.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/navigation.jspx" afterPath="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/navigation.jspx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-web/src/main/resources/spring-security.xml" afterPath="$PROJECT_DIR$/borsch-web/src/main/resources/spring-security.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="borsch.iws" />
@@ -38,7 +27,7 @@
     <file path="/app-servlet.xml" changelist="1247cfe1-0ef8-4806-9b04-d3165fb375e8" time="1375105547301" ignored="false" />
     <file path="/DishService.java" changelist="1247cfe1-0ef8-4806-9b04-d3165fb375e8" time="1375106882798" ignored="false" />
     <file path="/DishServiceImpl.java" changelist="1247cfe1-0ef8-4806-9b04-d3165fb375e8" time="1375182756700" ignored="false" />
-    <file path="/layouts.xml" changelist="1247cfe1-0ef8-4806-9b04-d3165fb375e8" time="1375193931649" ignored="false" />
+    <file path="/layouts.xml" changelist="1247cfe1-0ef8-4806-9b04-d3165fb375e8" time="1375202308426" ignored="false" />
     <file path="/DishesListPreparer.java" changelist="1247cfe1-0ef8-4806-9b04-d3165fb375e8" time="1374759325219" ignored="false" />
     <file path="/dishes-list.jspx" changelist="1247cfe1-0ef8-4806-9b04-d3165fb375e8" time="1375193800126" ignored="false" />
     <file path="/applicationContext.xml" changelist="1247cfe1-0ef8-4806-9b04-d3165fb375e8" time="1374759986656" ignored="false" />
@@ -151,37 +140,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="default.jspx" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/layouts/default.jspx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="313" selection-end="313" vertical-scroll-proportion="0.19255663">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="navigation.jspx" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/navigation.jspx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="63" selection-start="443" selection-end="443" vertical-scroll-proportion="-5.230769">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="312" column="39" selection-start="11833" selection-end="11833" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="AdminController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/borsch-web/src/main/java/com/exadel/borsch/web/controllers/AdminController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="43" selection-start="751" selection-end="751" vertical-scroll-proportion="0.0">
+            <state line="30" column="74" selection-start="1018" selection-end="1018" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -189,37 +151,82 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DishDAO.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/dao/DishDAO.java">
+      <file leaf-file-name="Dish.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/entity/Dish.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="17" selection-start="135" selection-end="135" vertical-scroll-proportion="0.0">
+            <state line="34" column="5" selection-start="699" selection-end="699" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DishDAOImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/dao/impl/DishDAOImpl.java">
+      <file leaf-file-name="DishServiceImpl.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/service/impl/DishServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="13" selection-start="404" selection-end="404" vertical-scroll-proportion="0.0">
+            <state line="16" column="57" selection-start="558" selection-end="558" vertical-scroll-proportion="0.3261391">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserDAOImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/dao/impl/UserDAOImpl.java">
+      <file leaf-file-name="UserServiceImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/service/impl/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="67" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0">
+            <state line="28" column="39" selection-start="894" selection-end="894" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/borsch-web/src/main/webapp/css/style.css">
+      <file leaf-file-name="IndexController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/borsch-web/src/main/java/com/exadel/borsch/web/controllers/IndexController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="134" column="37" selection-start="2092" selection-end="2092" vertical-scroll-proportion="-8.0">
+            <state line="12" column="79" selection-start="547" selection-end="547" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="datasource.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/borsch-web/src/main/resources/datasource.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="44" column="8" selection-start="2442" selection-end="2442" vertical-scroll-proportion="-12.72">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layouts.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/borsch-web/src/main/resources/layouts.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="2" selection-start="1452" selection-end="1452" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spring-security.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/borsch-web/src/main/resources/spring-security.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="71" selection-start="2107" selection-end="2107" vertical-scroll-proportion="-22.44">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app-servlet.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/borsch-web/src/main/resources/app-servlet.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="94" selection-start="1568" selection-end="1568" vertical-scroll-proportion="-10.84">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="applicationContext.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/borsch-web/src/main/resources/applicationContext.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="91" selection-start="1179" selection-end="1179" vertical-scroll-proportion="-12.04">
               <folding />
             </state>
           </provider>
@@ -244,12 +251,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/entity/Order.java" />
-        <option value="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/header.jspx" />
-        <option value="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/navigation.jspx" />
-        <option value="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/admin/addDish.jspx" />
-        <option value="$PROJECT_DIR$/borsch-web/src/main/resources/layouts.xml" />
         <option value="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/dishes-list.jspx" />
         <option value="$PROJECT_DIR$/borsch-web/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
@@ -257,9 +258,15 @@
         <option value="$PROJECT_DIR$/borsch-web/src/main/webapp/css/style.css" />
         <option value="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/layouts/default.jspx" />
         <option value="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/body.jspx" />
-        <option value="$PROJECT_DIR$/borsch-web/src/main/java/com/exadel/borsch/web/controllers/IndexController.java" />
         <option value="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/enter.jspx" />
         <option value="$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/dao/impl/UserDAOImpl.java" />
+        <option value="$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/service/DishService.java" />
+        <option value="$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/entity/Dish.java" />
+        <option value="$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/service/impl/DishServiceImpl.java" />
+        <option value="$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/borsch-web/src/main/java/com/exadel/borsch/web/controllers/IndexController.java" />
+        <option value="$PROJECT_DIR$/borsch-web/src/main/resources/datasource.xml" />
+        <option value="$PROJECT_DIR$/borsch-web/src/main/resources/layouts.xml" />
       </list>
     </option>
   </component>
@@ -859,6 +866,56 @@
               <option name="myItemId" value="borsch" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="impl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="borsch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="andrey_korzhenevsky" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="borsch-core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exadel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="borsch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="entity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1375,11 +1432,11 @@
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2560606" sideWeight="0.42393163" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2560606" sideWeight="0.41709402" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21943372" sideWeight="0.89772725" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21943372" sideWeight="0.65909094" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32820514" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18854569" sideWeight="0.89772725" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0" sideWeight="0.6074646" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18854569" sideWeight="0.65909094" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3409091" sideWeight="0.6074646" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="SQL" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -1454,98 +1511,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/web.xml">
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="41" selection-start="333" selection-end="354" vertical-scroll-proportion="47.6">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/borsch-web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="27" selection-start="702" selection-end="702" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/borsch-core/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="312" column="39" selection-start="11833" selection-end="11833" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/borsch-web/src/main/webapp/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="134" column="37" selection-start="2092" selection-end="2092" vertical-scroll-proportion="-8.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/admin/addDish.jspx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="61" selection-start="771" selection-end="771" vertical-scroll-proportion="0.53882724">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/body.jspx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.7511886">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/borsch-web/src/main/java/com/exadel/borsch/web/controllers/IndexController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="962" selection-end="962" vertical-scroll-proportion="0.35312024">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/header.jspx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="265" selection-end="265" vertical-scroll-proportion="0.13302034">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/enter.jspx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="343" selection-end="343" vertical-scroll-proportion="0.2607362">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/navigation.jspx">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="63" selection-start="443" selection-end="443" vertical-scroll-proportion="-5.230769">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/borsch-web/src/main/java/com/exadel/borsch/web/controllers/AdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="43" selection-start="751" selection-end="751" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1572,7 +1541,86 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/layouts/default.jspx">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="313" selection-end="313" vertical-scroll-proportion="0.19255663">
+        <state line="7" column="0" selection-start="313" selection-end="313" vertical-scroll-proportion="-4.576923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/service/DishService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/entity/Dish.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="5" selection-start="699" selection-end="699" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="39" selection-start="894" selection-end="894" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/borsch-web/src/main/java/com/exadel/borsch/web/controllers/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="79" selection-start="547" selection-end="547" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/borsch-web/src/main/resources/spring-security.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="71" selection-start="2107" selection-end="2107" vertical-scroll-proportion="-22.44">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/borsch-web/src/main/resources/app-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="94" selection-start="1568" selection-end="1568" vertical-scroll-proportion="-10.84">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/borsch-web/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="91" selection-start="1179" selection-end="1179" vertical-scroll-proportion="-12.04">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/borsch-web/src/main/resources/datasource.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="8" selection-start="2442" selection-end="2442" vertical-scroll-proportion="-12.72">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/borsch-web/src/main/java/com/exadel/borsch/web/controllers/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="74" selection-start="1018" selection-end="1018" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/borsch-web/src/main/resources/layouts.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="2" selection-start="1452" selection-end="1452" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/service/impl/DishServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="57" selection-start="558" selection-end="558" vertical-scroll-proportion="0.3261391">
           <folding />
         </state>
       </provider>

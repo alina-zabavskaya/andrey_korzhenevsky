@@ -1,13 +1,13 @@
 <jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" xmlns="http://www.w3.org/1999/xhtml" version="2.0">
-    <div class="span2">
-
-            <ul class="nav nav-pills nav-stacked">
+    <div class="left_panel">
+        <div id="navigation">
+            <ul class="top-level">
                 <li><a href="#">Понедельник</a></li>
                 <li><a href="#">Вторник</a></li>
                 <li><a href="#">Среда</a></li>
                 <li><a href="#">Четверг</a></li>
                 <li><a href="#">Патница</a></li>
             </ul>
-
+        </div>
     </div>
 </jsp:root>

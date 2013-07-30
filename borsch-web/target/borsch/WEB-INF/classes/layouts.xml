@@ -13,9 +13,13 @@
         <put-attribute name="body" value=""/>
     </definition>
 
-    <!--<definition name="dishes.list" extends="default">-->
-        <!--<put-attribute name="body" value="WEB-INF/jsp/views/dishes-list.jspx"/>-->
-    <!--</definition>-->
+    <definition name="dishes.user" extends="default">
+        <put-attribute name="body" value="/WEB-INF/jsp/views/dishes-user.jspx"/>
+    </definition>
+
+    <definition name="dishes.list" extends="default">
+        <put-attribute name="body" value="WEB-INF/jsp/views/dishes-list.jspx"/>
+    </definition>
 
     <definition name="index" extends="default">
         <put-attribute name="body" value="/WEB-INF/jsp/views/body.jspx"/>
@@ -28,7 +32,6 @@
     <definition name="admin/showAddDishForm" extends="default">
         <put-attribute name="body" value="/WEB-INF/jsp/views/admin/addDish.jspx"/>
     </definition>
-    <definition name="dishes.list" extends="default">
-        <put-attribute name="body" value="/WEB-INF/jsp/views/dishes-list.jspx"/>
-    </definition>
+
+
 </tiles-definitions>

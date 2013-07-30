@@ -13,6 +13,15 @@ public class Dish {
         this.info = info;
     }
 
+    public Dish() {
+    }
+
+    public Dish(String name, Integer price, String info) {
+        this.name = name;
+        this.price = price;
+        this.info = info;
+    }
+
     public String getInfo() {
         return info;
     }

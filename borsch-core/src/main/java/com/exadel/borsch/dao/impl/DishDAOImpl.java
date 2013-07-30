@@ -15,15 +15,15 @@ import java.util.List;
 public class DishDAOImpl extends JdbcDaoSupport implements DishDAO {
     private static final String QUERY_SELECT_ALL = "select id, name, price, info from dish";
     private static final String QUERY_SELECT_BY_DATE =
-            "select d.id, d.name, d.price, d.info from dish d " +
-                    "inner join dish_access da on da.dish_id=d.id " +
-                    "where d.enabled=true and da.date=?";
+            "select d.id, d.name, d.price, d.info from dish d "
+                    + "inner join dish_access da on da.dish_id=d.id "
+                    + "where d.enabled=true and da.date=?";
 
     private static final String QUERY_DISH_BY_ID = QUERY_SELECT_ALL + " where id=?";
 
     private static final String QUERY_DELETE_DISH = "delete from dish where id=?";
 
-    private static final String QUERY_DISH_INSERT = "insert into dish (name, price, info) values(?,?,?) returning id";
+    private static final String QUERY_DISH_INSERT = "insert into dish (name, price, info) values(?,?,?)";
 
    // private static final String QUERY_DISH_UPDATE = "update dish set name=?, price=?, info=? where id=?";
 
