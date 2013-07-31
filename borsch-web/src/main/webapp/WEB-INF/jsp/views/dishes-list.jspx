@@ -10,7 +10,6 @@
             <dt class="elem">
                 <a href="#">
                     <strong>${dish.name}</strong>
-
                 </a>
                 Price: ${dish.price}<br/>
                 ${dish.info}

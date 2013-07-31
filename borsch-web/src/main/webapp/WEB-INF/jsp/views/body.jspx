@@ -3,54 +3,14 @@
           xmlns:c="http://java.sun.com/jsp/jstl/core"
         >
 
-    <!--<div class="content">-->
-        <!--<dl>-->
-            <!--<dt class="elem">-->
-                <!--<a href="#">-->
-                    <!--<strong>Название</strong>-->
-
-                <!--</a>-->
-                <!--<img src="#" width="180" height="200"/>-->
-                <!--Цена-->
-            <!--</dt>-->
-            <!--<dt class="elem">-->
-                <!--<a href="#">-->
-                    <!--<strong>Название</strong>-->
-
-                <!--</a>-->
-                <!--<img src="#" width="180" height="200"/>-->
-                <!--Цена-->
-            <!--</dt>-->
-            <!--<dt class="elem">-->
-                <!--<a href="#">-->
-                    <!--<strong>Название</strong>-->
-
-                <!--</a>-->
-                <!--<img src="#" width="180" height="200"/>-->
-                <!--Цена-->
-            <!--</dt>-->
-            <!--<dt class="clear"/>-->
-            <!--<dt class="elem">-->
-                <!--<a href="#">-->
-                    <!--<strong>Название</strong>-->
-
-                <!--</a>-->
-                <!--<img src="#" width="180" height="200"/>-->
-                <!--Цена-->
-            <!--</dt>-->
-        <!--</dl>-->
-    <!--</div>-->
-
-
     <div class="content">
     <dl>
     <c:forEach var="dish" items="${dishes}">
     <dt class="elem">
-    <a href="#">
+    <a href="#" class="sourse-name">
     <strong>${dish.name}</strong>
-
     </a>
-    <img src="#" width="180" height="200"/>
+    <img src="${pageContext.servletContext.contextPath}/img/${dish.img}" width="180" height="200"/>
     Price: ${dish.price}<br/>
     ${dish.info}
     </dt>

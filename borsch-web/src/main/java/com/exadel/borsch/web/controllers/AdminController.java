@@ -30,6 +30,7 @@ public class AdminController {
                           @RequestParam String info,
                           Model model) {
         Dish dish = new Dish(name, price, info);
+        dish.setImg("exadel.png");
         model.addAttribute("success", "Блюдо добавлено.");
         dishService.saveDish(dish);
         return "admin/showAddDishForm";

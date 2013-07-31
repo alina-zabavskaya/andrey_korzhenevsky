@@ -1,6 +1,8 @@
 <jsp:root xmlns:jsp="http://java.sun.com/JSP/Page"
           xmlns="http://www.w3.org/1999/xhtml"
-          version="2.0" xmlns:tiles="http://tiles.apache.org/tags-tiles">
+          version="2.0" xmlns:tiles="http://tiles.apache.org/tags-tiles"
+          xmlns:sec="http://www.springframework.org/security/tags">
+
     <html>
     <head>
         <jsp:directive.page contentType="text/html;charset=UTF-8"/>
@@ -27,41 +29,14 @@
             <div class="navbar">
                 <div class="navbar-inner">
                     <div class="container">
-
-                        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </a>
-
-                        <!-- Be sure to leave the brand out there if you want it shown -->
-                        <a class="brand" href="${pageContext.servletContext.contextPath}/admin/adddish">Добавить блюдо</a>
                         <a class="brand" href="${pageContext.servletContext.contextPath}">Меню</a>
-
-                        <!-- Everything you want hidden at 940px or less, place within here -->
-                        <div class="nav-collapse">
-                            <!-- .nav, .navbar-search, .navbar-form, etc -->
-                        </div>
-
+                        <sec:authorize access="hasRole('ROLE_ADMIN')">
+                            <a class="brand" href="${pageContext.servletContext.contextPath}/admin/adddish">Добавить блюдо</a>
+                        </sec:authorize>
                     </div>
                 </div>
-
             </div>
 
-            <!--<div id="mainbar">-->
-                <!--<dl class="main_menu">-->
-                    <!--<dt></dt>-->
-                    <!--&lt;!&ndash; ... &ndash;&gt;-->
-                    <!--<sec:authorize access="hasRole('ROLE_ADMIN')">-->
-
-                        <!--<a class="menu_a"-->
-                           <!--href="${pageContext.servletContext.contextPath}/admin/adddish">Добавить блюдо</a>-->
-                    <!--</sec:authorize>-->
-                <!--</dl>-->
-
-
-            <!--</div>-->
             <div id="maincontent">
                 <tiles:insertAttribute name="left_panel"/>
                 <tiles:insertAttribute name="body"/>

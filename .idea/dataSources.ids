@@ -25,6 +25,7 @@
       <column name="price" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4" />
       <column name="info" sqlType="VARCHAR" length="500" precision="0" nullable="true" jdbcType="12" />
       <column name="enable" sqlType="BIT" length="1" precision="0" nullable="true" jdbcType="-7" def="YicwJw==" />
+      <column name="img" sqlType="VARCHAR" length="45" precision="0" nullable="true" jdbcType="12" />
       <primary-key name="PRIMARY" columns="id" />
       <exported-key name="dish_access_ibfk_1" table="dish_access" schema="" catalog="borsh" columns="dish_id" />
     </table>

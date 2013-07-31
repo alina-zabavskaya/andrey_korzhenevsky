@@ -13,9 +13,9 @@ import java.util.List;
 
 
 public class DishDAOImpl extends JdbcDaoSupport implements DishDAO {
-    private static final String QUERY_SELECT_ALL = "select id, name, price, info from dish";
+    private static final String QUERY_SELECT_ALL = "select id, name, price, info, img from dish";
     private static final String QUERY_SELECT_BY_DATE =
-            "select d.id, d.name, d.price, d.info from dish d "
+            "select d.id, d.name, d.price, d.info, d,img from dish d "
                     + "inner join dish_access da on da.dish_id=d.id "
                     + "where d.enabled=true and da.date=?";
 
@@ -23,7 +23,7 @@ public class DishDAOImpl extends JdbcDaoSupport implements DishDAO {
 
     private static final String QUERY_DELETE_DISH = "delete from dish where id=?";
 
-    private static final String QUERY_DISH_INSERT = "insert into dish (name, price, info) values(?,?,?)";
+    private static final String QUERY_DISH_INSERT = "insert into dish (name, price, info, img) values(?,?,?,?)";
 
    // private static final String QUERY_DISH_UPDATE = "update dish set name=?, price=?, info=? where id=?";
 
@@ -34,7 +34,8 @@ public class DishDAOImpl extends JdbcDaoSupport implements DishDAO {
                      resultSet.getInt("id"),
                      resultSet.getString("name"),
                      resultSet.getInt("price"),
-                     resultSet.getString("info")
+                     resultSet.getString("info"),
+                     resultSet.getString("img")
              );
          }
      };
@@ -81,7 +82,8 @@ public class DishDAOImpl extends JdbcDaoSupport implements DishDAO {
                 QUERY_DISH_INSERT,
                 dish.getName(),
                 dish.getPrice(),
-                dish.getInfo()
+                dish.getInfo(),
+                dish.getImg()
         );
     }
 }
