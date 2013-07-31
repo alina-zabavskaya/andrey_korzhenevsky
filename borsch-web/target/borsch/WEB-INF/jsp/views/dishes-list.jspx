@@ -8,9 +8,9 @@
         <dl>
             <c:forEach var="dish" items="${dishes}">
             <dt class="elem">
-                <a href="#">
+                <!--<a href="#">-->
                     <strong>${dish.name}</strong>
-                </a>
+                <!--</a>-->
                 Price: ${dish.price}<br/>
                 ${dish.info}
             </dt>

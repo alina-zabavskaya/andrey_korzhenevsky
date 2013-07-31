@@ -12,16 +12,16 @@ div {
     display: block;
 }
 
-body {
-    min-height: 100%;
-    height: 100%;
-    color: #4a4a4a;
-    font-weight: normal;
-    font-family: Arial, Verdana, Helvetica, Sans-Serif;
-    font-size: 12px;
-    line-height: 1.4;
-    /* background: url(bg.jpg) 0 40px repeat-x #e5e2e2;*/
-}
+/*body {*/
+    /*min-height: 100%;*/
+    /*height: 100%;*/
+    /*color: graytext;*/
+    /*font-weight: normal;*/
+    /*font-family: Arial, Verdana, Helvetica, Sans-Serif;*/
+    /*font-size: 12px;*/
+    /*line-height: 1.4;*/
+
+/*}*/
 
 #page {
     height: auto !important;
@@ -29,10 +29,10 @@ body {
     overflow: hidden;
 }
 
-.head_line {
-    height: 40px;
-    background: #00008b;
-}
+/*.head_line {*/
+    /*height: 40px;*/
+    /*background: #00008b;*/
+/*}*/
 
 div.head_line > div {
     height: 40px;
@@ -106,7 +106,7 @@ dl.main_menu dt.selected a {
 #maincontent {
     margin-bottom: 25px;
     min-height: 500px;
-    color: #2F72A0;
+    /*color: #2F72A0;*/
 }
 
 a.logo {
@@ -131,9 +131,8 @@ a.logo {
 .content {
     float: left;
     width: 79%;
-    /*border-top: 25px solid #2F72A0;*/
-    /*border-left: 2px solid grey;*/
-    /* border-right: 2px solid grey;*/
+    border-left: 2px solid grey;
+     border-right: 2px solid grey;
     min-height: 500px;
     margin: 0;
     padding: 0;
@@ -164,7 +163,6 @@ dt.elem {
     float: left;
     background: #fff;
     margin: 0 20px 0 0;
-    /*border-top: 24px solid;*/
     position: relative;
 }
 
@@ -196,13 +194,13 @@ dt.clear {
     float: left;
 }
 
-.right_foot {
-    float: left;
-    background: #2F72A0;
-    height: 20px;
-    width: 784px;
-    margin-left: 196px;
-}
+/*.right_foot {*/
+    /*float: left;*/
+    /*background: #2F72A0;*/
+    /*height: 20px;*/
+    /*width: 784px;*/
+    /*margin-left: 196px;*/
+/*}*/
 
 /*by Max*/
 #navigation {
@@ -250,16 +248,11 @@ ul.top-level li {
     position: relative;
 }
 
-/*???*/
-#header .login_block div a {
-    text-align: right;
 
-}
+/*#header .login_block div a {*/
+    /*text-align: right;*/
 
-.menu_a {
-   color: #fff;
-}
-
+/*}*/
 
 /*Alina*/
 
@@ -270,8 +263,9 @@ ul.top-level li {
     color: #ffffff;
     font-family: "Comic Sans MS";
 }
- .sourse-name{
+#sourse-name{
     color: #777777 ;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
  }
 

@@ -7,7 +7,7 @@
     <dl>
     <c:forEach var="dish" items="${dishes}">
     <dt class="elem">
-    <a href="#" class="sourse-name">
+    <a href="#" id="sourse-name">
     <strong>${dish.name}</strong>
     </a>
     <img src="${pageContext.servletContext.contextPath}/img/${dish.img}" width="180" height="200"/>
