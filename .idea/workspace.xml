@@ -2,19 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1247cfe1-0ef8-4806-9b04-d3165fb375e8" name="Default" comment="almost working project">
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\src\main\webapp\css\registration\reset.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\alina\borsch returning\andrey_korzhenevsky\borsch-web\src\main\webapp\css\registration\styles.css" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/borsch-web/src/main/webapp/img/borshch.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/borsch-web/src/main/webapp/img/fricadelki.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/borsch-web/src/main/webapp/img/goroh.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/borsch-web/src/main/webapp/img/holodnic.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/borsch-web/src/main/webapp/img/icon.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/borsch-web/src/main/webapp/js/jquery-2.0.3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/borsch-web/src/main/webapp/js/jquery-2.0.3.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/registration.jspx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-web/src/main/java/com/exadel/borsch/web/controllers/IndexController.java" afterPath="$PROJECT_DIR$/borsch-web/src/main/java/com/exadel/borsch/web/controllers/IndexController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/admin/addDish.jspx" afterPath="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/admin/addDish.jspx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-web/src/main/resources/app-servlet.xml" afterPath="$PROJECT_DIR$/borsch-web/src/main/resources/app-servlet.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/body.jspx" afterPath="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/body.jspx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-web/src/main/webapp/css/bootstrap.css" afterPath="$PROJECT_DIR$/borsch-web/src/main/webapp/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/layouts/default.jspx" afterPath="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/layouts/default.jspx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/header.jspx" afterPath="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/header.jspx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-web/src/main/resources/layouts.xml" afterPath="$PROJECT_DIR$/borsch-web/src/main/resources/layouts.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/navigation.jspx" afterPath="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/navigation.jspx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-web/src/main/webapp/css/style.css" afterPath="$PROJECT_DIR$/borsch-web/src/main/webapp/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="borsch.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,7 +19,7 @@
     <file path="/fragment.java" changelist="1247cfe1-0ef8-4806-9b04-d3165fb375e8" time="1375103162085" ignored="false" />
     <file path="/web.xml" changelist="1247cfe1-0ef8-4806-9b04-d3165fb375e8" time="1375197951723" ignored="false" />
     <file path="/TestClass.java" changelist="1247cfe1-0ef8-4806-9b04-d3165fb375e8" time="1374752718082" ignored="false" />
-    <file path="/IndexController.java" changelist="1247cfe1-0ef8-4806-9b04-d3165fb375e8" time="1375358997514" ignored="false" />
+    <file path="/IndexController.java" changelist="1247cfe1-0ef8-4806-9b04-d3165fb375e8" time="1375359719492" ignored="false" />
     <file path="/a.dummy" changelist="1247cfe1-0ef8-4806-9b04-d3165fb375e8" time="1375175140071" ignored="false" />
     <file path="/datasource.xml" changelist="1247cfe1-0ef8-4806-9b04-d3165fb375e8" time="1374866327273" ignored="false" />
     <file path="/pom.xml" changelist="1247cfe1-0ef8-4806-9b04-d3165fb375e8" time="1374757188636" ignored="false" />
@@ -145,15 +141,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="addDish.jspx" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/admin/addDish.jspx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="75" selection-start="691" selection-end="691" vertical-scroll-proportion="-9.153846">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
@@ -175,7 +162,7 @@
       <file leaf-file-name="registration.jspx" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/registration.jspx">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="60" selection-start="1143" selection-end="1143" vertical-scroll-proportion="-18.307692">
+            <state line="6" column="9" selection-start="307" selection-end="477" vertical-scroll-proportion="-3.9230769">
               <folding />
             </state>
           </provider>
@@ -211,7 +198,7 @@
       <file leaf-file-name="IndexController.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/borsch-web/src/main/java/com/exadel/borsch/web/controllers/IndexController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="85" column="47" selection-start="2912" selection-end="2912" vertical-scroll-proportion="2.8135197">
+            <state line="100" column="37" selection-start="3507" selection-end="3633" vertical-scroll-proportion="0.6037296">
               <folding />
             </state>
           </provider>
@@ -220,8 +207,10 @@
       <file leaf-file-name="AdminController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/borsch-web/src/main/java/com/exadel/borsch/web/controllers/AdminController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="13" selection-start="526" selection-end="526" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="30" column="28" selection-start="1006" selection-end="1006" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -1324,29 +1313,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/admin/addDish.jspx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="75" selection-start="691" selection-end="691" vertical-scroll-proportion="-9.153846">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="20.4">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/borsch-web/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1382,13 +1348,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/registration.jspx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="60" selection-start="1143" selection-end="1143" vertical-scroll-proportion="-18.307692">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/borsch-web/src/main/resources/layouts.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="4" selection-start="1457" selection-end="1607" vertical-scroll-proportion="0.0">
@@ -1396,16 +1355,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/registration.jspx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="9" selection-start="307" selection-end="477" vertical-scroll-proportion="-3.9230769">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/admin/addDish.jspx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="75" selection-start="691" selection-end="691" vertical-scroll-proportion="0.19851117">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="20.4">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/borsch-web/src/main/java/com/exadel/borsch/web/controllers/AdminController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="13" selection-start="526" selection-end="526" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="30" column="28" selection-start="1006" selection-end="1006" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/borsch-web/src/main/java/com/exadel/borsch/web/controllers/IndexController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="47" selection-start="2912" selection-end="2912" vertical-scroll-proportion="2.8135197">
+        <state line="100" column="37" selection-start="3507" selection-end="3633" vertical-scroll-proportion="0.6037296">
           <folding />
         </state>
       </provider>

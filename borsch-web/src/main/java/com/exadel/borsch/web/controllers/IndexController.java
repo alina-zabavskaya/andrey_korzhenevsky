@@ -1,12 +1,15 @@
 package com.exadel.borsch.web.controllers;
 
+import com.exadel.borsch.entity.User;
 import com.exadel.borsch.service.DishService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.security.Principal;
@@ -86,4 +89,17 @@ public class IndexController {
     public String registration(ModelMap model){
         return "registration";
     }
+    @RequestMapping(value = "/adddish", method = RequestMethod.POST)
+    public String addUser(@RequestParam String userName,
+                          @RequestParam String password,
+                          @RequestParam String confimPassword,
+                          @RequestParam String email
+                          Model model) {
+        User user = new User(userName, password, confimPassword,email);
+//        dish.setImg("exadel.png");
+//        model.addAttribute("success", "Блюдо добавлено.");
+//        dishService.saveDish(dish);
+        return "admin/showAddDishForm";
+    }
+
 }

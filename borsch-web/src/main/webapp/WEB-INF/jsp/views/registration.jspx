@@ -1,0 +1,44 @@
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" xmlns="http://www.w3.org/1999/xhtml" version="2.0"
+          xmlns:c="http://java.sun.com/jsp/jstl/core"
+        >
+    <script type="text/javascript">
+        jQuery(document).ready(function(){$("#success").hide()})
+        function addSubmit() {
+            var name = $('#userName').val()
+            var price = $('#passord').val()
+            var info = $('#confirmPassword').val()
+            var info = $('#email').val()
+            $.post("${pageContext.servletContext.contextPath}/registration",
+                    {name: name,price: price,info: info}).done($("#success").show(1000))
+        }
+    </script>
+        <div class="span3" >
+        <div class="form-horizontal">
+            <ul>
+                <li>
+                    Имя
+                    <input name="name" id="userName"/>
+                </li>
+                <li>
+                    Пороль
+                    <input name="price" id="passord"/>
+                </li>
+                <li>
+                    Подтвердите пороль
+                    <input name="price" id="confirmPassword"/>
+                </li>
+                <li>
+                    Информация
+                    <textarea name="info" id="email">
+                        <jsp:text/>
+                    </textarea>
+                </li>
+                <li>
+                    <input type="button" value="Зарегистрироваться" name="add" onclick="addSubmit()"/>
+                </li>
+            </ul>
+            <div class="alert alert-success" id = "success">Вы зарегестрированны</div>
+        </div>
+     </div>
+
+</jsp:root>
