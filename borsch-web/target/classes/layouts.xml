@@ -33,5 +33,9 @@
         <put-attribute name="body" value="/WEB-INF/jsp/views/admin/addDish.jspx"/>
     </definition>
 
+    <definition name="registration" extends="default">
+        <put-attribute name="body" value="/WEB-INF/jsp/views/registration.jspx"/>
+    </definition>
+
 
 </tiles-definitions>

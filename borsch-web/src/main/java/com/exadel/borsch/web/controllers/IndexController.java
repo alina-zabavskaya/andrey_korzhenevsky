@@ -82,5 +82,8 @@ public class IndexController {
         return "enter";
     }
 
-
+    @RequestMapping("/registration")
+    public String registration(ModelMap model){
+        return "registration";
+    }
 }

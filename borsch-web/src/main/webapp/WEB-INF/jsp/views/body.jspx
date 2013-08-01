@@ -3,6 +3,7 @@
           xmlns:c="http://java.sun.com/jsp/jstl/core"
         >
 
+
     <div class="content">
     <dl>
     <c:forEach var="dish" items="${dishes}">
@@ -10,9 +11,10 @@
     <a href="#" id="sourse-name">
     <strong>${dish.name}</strong>
     </a>
-    <img src="${pageContext.servletContext.contextPath}/img/${dish.img}" width="180" height="200"/>
-    Price: ${dish.price}<br/>
-    ${dish.info}
+    <img src="${pageContext.servletContext.contextPath}/img/${dish.img}" width="150" height="150"/>
+        <strong>${dish.info}</strong>
+        <strong>Price: ${dish.price}</strong>
+
     </dt>
     </c:forEach>
     </dl>

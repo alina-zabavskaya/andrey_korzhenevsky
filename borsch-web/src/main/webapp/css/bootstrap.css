@@ -99,8 +99,8 @@ sub {
 }
 
 img {
-  width: auto\9;
-  height: auto;
+  width: 200;
+  height: 150;
   max-width: 100%;
   vertical-align: middle;
   border: 0;
@@ -223,7 +223,7 @@ textarea {
 
 body {
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Comic Sans MS";
   font-size: 14px;
   /*line-height: 20px;*/
   /*color: #333333;*/
@@ -237,7 +237,7 @@ a {
 
 a:hover,
 a:focus {
-  color: #777777;
+  color: #ffffff;
   text-decoration: underline;
 }
 
@@ -2906,7 +2906,7 @@ table th[class*="span"],
   position: absolute;
   top: 100%;
   left: 0;
-  z-index: 1000;
+  z-index: 10000;
   display: none;
   float: left;
   min-width: 160px;
@@ -3959,7 +3959,7 @@ input[type="submit"].btn.btn-mini {
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #eeeeee;
+  background-color:#2f72a0;
 }
 
 .nav > li > a > img {
@@ -4372,7 +4372,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-inner {
   min-height: 40px;
   padding-right: 20px;
-  padding-left: 20px;
+  padding-left: 155px;
   background-color: #fafafa;
   background-image: -moz-linear-gradient(top, #ffffff, #f2f2f2);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f2f2f2));
@@ -4416,7 +4416,7 @@ input[type="submit"].btn.btn-mini {
   float: left;
   padding: 10px 20px 10px;
   margin-left: -20px;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 200;
   color: #777777;
   text-shadow: 0 1px 0 #ffffff;

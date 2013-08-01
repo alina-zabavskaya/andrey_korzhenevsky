@@ -3,10 +3,10 @@
           xmlns:sec="http://www.springframework.org/security/tags">
 
     <div id="header">
-        <div id="div_logo">
-            <a id="a_logo" class="logo" href="${pageContext.servletContext.contextPath}/">.</a>
+        <div id="div-logo">
+            <img  src="${pageContext.servletContext.contextPath}/img/exadel.png"></img>
         </div>
-        <div id="div_login_block" class="login_block">
+            <div id="div_login_block" class="login_block">
             <sec:authorize access="isAuthenticated()">
                 <sec:authentication property="principal.username" var="login"/>
 
@@ -29,5 +29,6 @@
             </security:authorize>
         </div>
     </div>
+
 
 </jsp:root>

@@ -146,14 +146,13 @@ dt a {
 dt a strong {
     font-family: 'PT Sans Bold';
     font-size: 18px;
-    color: #FFFFFF;
     font-weight: normal;
     line-height: 21px;
     width: 180px;
     display: block;
     position: relative;
     z-index: 1000;
-    background-color: #2F72A0;
+
 }
 
 dt.elem {
@@ -260,6 +259,7 @@ ul.top-level li {
     margin-top: 20px;
 }
  .login-registration{
+    padding: 10px 10px 11px;
     color: #ffffff;
     font-family: "Comic Sans MS";
 }
@@ -268,4 +268,7 @@ ul.top-level li {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
  }
+#div-logo{
+    padding: 10px 10px 11px;
+}
 

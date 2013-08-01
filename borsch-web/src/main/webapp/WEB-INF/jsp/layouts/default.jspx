@@ -1,7 +1,8 @@
 <jsp:root xmlns:jsp="http://java.sun.com/JSP/Page"
           xmlns="http://www.w3.org/1999/xhtml"
           version="2.0" xmlns:tiles="http://tiles.apache.org/tags-tiles"
-          xmlns:sec="http://www.springframework.org/security/tags">
+          xmlns:sec="http://www.springframework.org/security/tags"
+         >
 
     <html>
     <head>
@@ -11,29 +12,51 @@
         <link rel="stylesheet" type="text/css" href="${pageContext.servletContext.contextPath}/css/style.css/"/>
         <link rel="stylesheet" type="text/css" href="${pageContext.servletContext.contextPath}/css/bootstrap-responsive.css"/>
         <link rel="stylesheet" type="text/css" href="${pageContext.servletContext.contextPath}/css/bootstrap.css"/>
+
+
         <!--<link rel="apple-touch-icon-precomposed" sizes="72x72" href="${pageContext.servletContext.contextPath}/img/glyphicons-halflings-white.png"/>-->
         <!--<link rel="stylesheet" type="text/css" href="${pageContext.servletContext.contextPath}/css/bootstrap.min.css"/>-->
-
         <!--<link rel="stylesheet" type="text/css" href="css/registration/styles.css"/>-->
         <!--<link rel="stylesheet" type="text/css" href="css/registration/reset.css"/>-->
         <!--<link rel="stylesheet" type="text/css" href="css/registration/animate.css"/>-->
         <title>BORSH!</title>
+        <![CDATA[<script src="${pageContext.servletContext.contextPath}/js/jquery-2.0.3.min.js" ></script>]]>
+        <![CDATA[<script src="${pageContext.servletContext.contextPath}/js/bootstrap.min.js"></script>]]>
     </head>
     <body>
     <!--Login <jsp:expression>request.getUserPrincipal()</jsp:expression>-->
     <div id="page">
         <div class="wrp_ctr">
             <tiles:insertAttribute name="header"/>
-
-
             <div class="navbar">
                 <div class="navbar-inner">
-                    <div class="container">
-                        <a class="brand" href="${pageContext.servletContext.contextPath}">Меню</a>
+                        <div class="container">
+                        <!--<a class="brand" href="${pageContext.servletContext.contextPath}">Меню</a>-->
                         <sec:authorize access="hasRole('ROLE_ADMIN')">
-                            <a class="brand" href="${pageContext.servletContext.contextPath}/admin/adddish">Добавить блюдо</a>
+                            <div class="btn-group">
+                                <button class="btn dropdown-toggle" data-toggle="dropdown">
+                                    Работа с пользователями
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="${pageContext.servletContext.contextPath}/admin/adddish">Добавить пользователя</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="btn-group">
+                                <button class="btn dropdown-toggle" data-toggle="dropdown">
+                                    Работа с меню
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="${pageContext.servletContext.contextPath}/admin/adddish">Добавить блюдо</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </sec:authorize>
-                    </div>
+                </div>
                 </div>
             </div>
 
@@ -44,8 +67,7 @@
         </div>
     </div>
     <tiles:insertAttribute name="footer"/>
+
     </body>
-
-
     </html>
 </jsp:root>
