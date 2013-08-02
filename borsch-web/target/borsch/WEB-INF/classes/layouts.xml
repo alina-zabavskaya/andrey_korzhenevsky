@@ -37,5 +37,7 @@
         <put-attribute name="body" value="/WEB-INF/jsp/views/registration.jspx"/>
     </definition>
 
-
+    <definition name="users.list" extends="default">
+        <put-attribute name="body" value="/WEB-INF/jsp/views/users-list.jspx"/>
+    </definition>
 </tiles-definitions>

@@ -8,6 +8,7 @@ public interface UserDAO {
     List<User> getUsers();
     User findByLogin(String login);
     User findById(Integer id);
-    void saveUser(User dish);
+    void saveUser(User user);
     void deleteUser(Integer id);
+    void updateUser(User user);
 }

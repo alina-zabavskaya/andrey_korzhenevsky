@@ -23,7 +23,7 @@
                     <a href='${pageContext.servletContext.contextPath}/enter' class="login-registration"> Войти</a>
                 </div>
                 <div>
-                    <a href='${pageContext.servletContext.contextPath}/registration' class= "login-registration">Зарегистрироваться</a>
+                    <a href='${pageContext.servletContext.contextPath}/registration' class= "login-registration">Регистрация</a>
 
                 </div>
             </security:authorize>

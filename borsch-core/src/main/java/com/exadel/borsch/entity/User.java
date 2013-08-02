@@ -18,6 +18,13 @@ public class User implements Serializable {
         this.info = info;
         this.email = email;
     }
+    public User(String login, String password, String info, String email) {
+
+        this.login = login;
+        this.password = password;
+        this.info = info;
+        this.email = email;
+    }
 
     public Integer getId() {
         return id;
@@ -65,6 +72,4 @@ public class User implements Serializable {
     public void setEmail(String email) {
         this.email = email;
     }
-
-
 }

@@ -40,7 +40,10 @@
                                 </button>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a href="${pageContext.servletContext.contextPath}/admin/adddish">Добавить пользователя</a>
+                                        <a href="${pageContext.servletContext.contextPath}/admin/users">Редактировать пользователя</a>
+                                    </li>
+                                    <li>
+                                        <a href="${pageContext.servletContext.contextPath}/admin/users">Удалить пользователя</a>
                                     </li>
                                 </ul>
                             </div>
@@ -52,6 +55,12 @@
                                 <ul class="dropdown-menu">
                                     <li>
                                         <a href="${pageContext.servletContext.contextPath}/admin/adddish">Добавить блюдо</a>
+                                    </li>
+                                    <li>
+                                        <a href="${pageContext.servletContext.contextPath}/admin/adddish">Редактировать блюдо</a>
+                                    </li>
+                                    <li>
+                                        <a href="${pageContext.servletContext.contextPath}/admin/adddish">Удалить блюдо</a>
                                     </li>
                                 </ul>
                             </div>

@@ -26,4 +26,15 @@ public class UserServiceImpl implements UserService {
     public User findUser(String login) {
         return userDAO.findByLogin(login);
     }
+
+    @Transactional(propagation = Propagation.REQUIRED)
+    public void saveUser(User user) {
+              boolean isNew = user.getId() == null;
+        if (isNew) {
+            userDAO.saveUser(user);
+        } else {
+            userDAO.updateUser(user);
+        }
+    }
+
 }

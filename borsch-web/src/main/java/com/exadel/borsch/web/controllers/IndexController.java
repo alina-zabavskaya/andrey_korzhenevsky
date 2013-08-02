@@ -2,7 +2,9 @@ package com.exadel.borsch.web.controllers;
 
 import com.exadel.borsch.entity.User;
 import com.exadel.borsch.service.DishService;
+import com.exadel.borsch.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
@@ -27,6 +29,8 @@ import java.util.Map;
 public class IndexController {
     @Autowired
     private DishService dishService;
+    @Autowired
+    private UserService userService;
 
     @RequestMapping(value = "/sec/menu/dishes/{date}", method = RequestMethod.GET)
 
@@ -86,20 +90,19 @@ public class IndexController {
     }
 
     @RequestMapping("/registration")
-    public String registration(ModelMap model){
+    public String registration(ModelMap model) {
         return "registration";
     }
     @RequestMapping(value = "/adddish", method = RequestMethod.POST)
     public String addUser(@RequestParam String userName,
                           @RequestParam String password,
                           @RequestParam String confimPassword,
-                          @RequestParam String email
+                          @RequestParam String email,
                           Model model) {
-        User user = new User(userName, password, confimPassword,email);
-//        dish.setImg("exadel.png");
-//        model.addAttribute("success", "Блюдо добавлено.");
-//        dishService.saveDish(dish);
-        return "admin/showAddDishForm";
+        User user = new User(userName, password, confimPassword, email);
+        user.setRole("ROLE_USER");
+        userService.saveUser(user);
+        return "/enter";
     }
 
 }

@@ -34,7 +34,7 @@ public class UserDAOImpl extends JdbcDaoSupport implements UserDAO {
     private static final String QUERY_USER_INSERT = "insert into user (login, password, role, info, email)"
             + " values(?,?,?,?,?) returning id";
 
-    // private static final String QUERY_DISH_UPDATE = "update dish set name=?, price=?, info=? where id=?";
+   private static final String QUERY_USER_UPDATE = "update user set  login=?, password=?,role=?, info=?, email=?";
 
     private final RowMapper<User> rowMapper = new RowMapper<User>() {
 
@@ -85,14 +85,20 @@ public class UserDAOImpl extends JdbcDaoSupport implements UserDAO {
     }
 
 
-
+    @Override
     public void deleteUser(Integer id) {
         getJdbcTemplate().update(QUERY_DELETE_USER, id);
     }
 
-
-
-
+    @Override
+    public void updateUser(User user) {
+        getJdbcTemplate().update(
+                QUERY_USER_UPDATE,
+                user.getRole(),
+                user.getId()
+        );
+    }
+    @Override
     public void saveUser(User user) {
         getJdbcTemplate().update(
                 QUERY_USER_INSERT,

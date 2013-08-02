@@ -8,7 +8,7 @@
             var price = $('#passord').val()
             var info = $('#confirmPassword').val()
             var info = $('#email').val()
-            $.post("${pageContext.servletContext.contextPath}/registration",
+            $.post("${pageContext.servletContext.contextPath}/",
                     {name: name,price: price,info: info}).done($("#success").show(1000))
         }
     </script>
@@ -28,7 +28,7 @@
                     <input name="price" id="confirmPassword"/>
                 </li>
                 <li>
-                    Информация
+                    e-mail
                     <textarea name="info" id="email">
                         <jsp:text/>
                     </textarea>

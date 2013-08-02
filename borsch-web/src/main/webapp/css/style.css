@@ -60,7 +60,7 @@ div.head_line > div {
 }
 
 .login_block {
-    background: #fff;
+
     border: 0;
     border-top: 0;
     padding: 10px 10px 11px;
@@ -68,7 +68,7 @@ div.head_line > div {
     right: 0;
     top: 0px;
     width: 150px;
-    background-color: #2F72A0;
+    /*background-color: #2F72A0;*/
 }
 
 .main_menu {
@@ -106,7 +106,7 @@ dl.main_menu dt.selected a {
 #maincontent {
     margin-bottom: 25px;
     min-height: 500px;
-    /*color: #2F72A0;*/
+
 }
 
 a.logo {
@@ -144,7 +144,7 @@ dt a {
 }
 
 dt a strong {
-    font-family: 'PT Sans Bold';
+
     font-size: 18px;
     font-weight: normal;
     line-height: 21px;
@@ -193,13 +193,7 @@ dt.clear {
     float: left;
 }
 
-/*.right_foot {*/
-    /*float: left;*/
-    /*background: #2F72A0;*/
-    /*height: 20px;*/
-    /*width: 784px;*/
-    /*margin-left: 196px;*/
-/*}*/
+
 
 /*by Max*/
 #navigation {
@@ -218,7 +212,7 @@ dt.clear {
 }
 
 ul.top-level {
-    background: #666;
+    background: #808080;
 }
 
 ul.top-level li {
@@ -248,11 +242,6 @@ ul.top-level li {
 }
 
 
-/*#header .login_block div a {*/
-    /*text-align: right;*/
-
-/*}*/
-
 /*Alina*/
 
 #maincontent .span3{
@@ -265,7 +254,7 @@ ul.top-level li {
 }
 #sourse-name{
     color: #777777 ;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
 
  }
 #div-logo{
