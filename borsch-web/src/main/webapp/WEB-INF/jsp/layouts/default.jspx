@@ -40,10 +40,10 @@
                                 </button>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a href="${pageContext.servletContext.contextPath}/admin/users">Редактировать пользователя</a>
+                                        <a href="${pageContext.servletContext.contextPath}/admin/users/?edit=true">Редактировать пользователя</a>
                                     </li>
                                     <li>
-                                        <a href="${pageContext.servletContext.contextPath}/admin/users">Удалить пользователя</a>
+                                        <a href="${pageContext.servletContext.contextPath}/admin/users/?remove=true">Удалить пользователя</a>
                                     </li>
                                 </ul>
                             </div>

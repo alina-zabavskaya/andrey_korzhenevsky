@@ -130,7 +130,7 @@ a.logo {
 /*fix*/
 .content {
     float: left;
-    width: 79%;
+    width: 83%;
     border-left: 2px solid grey;
      border-right: 2px solid grey;
     min-height: 500px;
@@ -246,6 +246,7 @@ ul.top-level li {
 
 #maincontent .span3{
     margin-top: 20px;
+
 }
  .login-registration{
     padding: 10px 10px 11px;

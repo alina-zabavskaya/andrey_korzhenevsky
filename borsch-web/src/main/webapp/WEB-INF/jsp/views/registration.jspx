@@ -13,7 +13,7 @@
         }
     </script>
         <div class="span3" >
-        <div class="form-horizontal">
+        <form class="form-horizontal">
             <ul>
                 <li>
                     Имя
@@ -29,16 +29,16 @@
                 </li>
                 <li>
                     e-mail
-                    <textarea name="info" id="email">
+                    <input name="info" id="email">
                         <jsp:text/>
-                    </textarea>
+                    </input>
                 </li>
                 <li>
-                    <input type="button" value="Зарегистрироваться" name="add" onclick="addSubmit()"/>
+                    <input type="button" value="Зарегистрироваться" name="add" onclick="addSubmit()" class="btn"/>
                 </li>
             </ul>
             <div class="alert alert-success" id = "success">Вы зарегестрированны</div>
-        </div>
+        </form>
      </div>
 
 </jsp:root>
