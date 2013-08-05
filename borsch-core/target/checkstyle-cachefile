@@ -1,14 +1,23 @@
-#Thu Aug 01 21:39:18 FET 2013
-D\:\\alina\\borsch\ returning\\andrey_korzhenevsky\\borsch-core\\src\\main\\java\\com\\exadel\\borsch\\service\\impl\\UserServiceImpl.java=1375366195919
-D\:\\alina\\borsch\ returning\\andrey_korzhenevsky\\borsch-core\\src\\main\\java\\com\\exadel\\borsch\\entity\\User.java=1375366001376
-D\:\\alina\\borsch\ returning\\andrey_korzhenevsky\\borsch-core\\src\\main\\java\\com\\exadel\\borsch\\entity\\Dish.java=1375255573210
-D\:\\alina\\borsch\ returning\\andrey_korzhenevsky\\borsch-core\\src\\main\\java\\com\\exadel\\borsch\\service\\DishService.java=1375201621359
+#Mon Aug 05 15:00:10 FET 2013
+D\:\\alina\\borsch\ returning\\andrey_korzhenevsky\\borsch-core\\src\\main\\java\\com\\exadel\\borsch\\service\\OrderService.java=1375217334000
 D\:\\alina\\borsch\ returning\\andrey_korzhenevsky\\borsch-core\\src\\main\\java\\com\\exadel\\borsch\\service\\UserService.java=1375362807905
+D\:\\alina\\borsch\ returning\\andrey_korzhenevsky\\borsch-core\\src\\main\\java\\com\\exadel\\borsch\\dao\\impl\\OrderDAOImpl.java=1375693458086
+D\:\\alina\\borsch\ returning\\andrey_korzhenevsky\\borsch-core\\src\\main\\java\\com\\exadel\\borsch\\entity\\User.java=1375366001376
+D\:\\alina\\borsch\ returning\\andrey_korzhenevsky\\borsch-core\\src\\main\\java\\com\\exadel\\borsch\\service\\impl\\DishInOrderServiceImpl.java=1375692008430
 D\:\\alina\\borsch\ returning\\andrey_korzhenevsky\\borsch-core\\src\\main\\java\\com\\exadel\\borsch\\dao\\DishDAO.java=1375103284544
-D\:\\alina\\borsch\ returning\\andrey_korzhenevsky\\borsch-core\\src\\main\\java\\com\\exadel\\borsch\\entity\\Order.java=1375200505349
-D\:\\alina\\borsch\ returning\\andrey_korzhenevsky\\borsch-core\\src\\main\\java\\com\\exadel\\borsch\\entity\\Registration.java=1375103284575
-D\:\\alina\\borsch\ returning\\andrey_korzhenevsky\\borsch-core\\src\\main\\java\\com\\exadel\\borsch\\dao\\UserDAO.java=1375365292327
+D\:\\alina\\borsch\ returning\\andrey_korzhenevsky\\borsch-core\\src\\main\\java\\com\\exadel\\borsch\\entity\\Dish.java=1375255573210
 D\:\\alina\\borsch\ returning\\andrey_korzhenevsky\\borsch-core\\src\\main\\java\\com\\exadel\\borsch\\dao\\impl\\DishDAOImpl.java=1375256668664
+D\:\\alina\\borsch\ returning\\andrey_korzhenevsky\\borsch-core\\src\\main\\java\\com\\exadel\\borsch\\service\\DishInOrderService.java=1375453040000
 D\:\\alina\\borsch\ returning\\andrey_korzhenevsky\\borsch-core\\src\\main\\java\\com\\exadel\\borsch\\service\\impl\\DishServiceImpl.java=1375201678688
-configuration*?=F9BFD51F625FF526EEB71A9E1B9598DA227C0F91
 D\:\\alina\\borsch\ returning\\andrey_korzhenevsky\\borsch-core\\src\\main\\java\\com\\exadel\\borsch\\dao\\impl\\UserDAOImpl.java=1375366195910
+D\:\\alina\\borsch\ returning\\andrey_korzhenevsky\\borsch-core\\src\\main\\java\\com\\exadel\\borsch\\entity\\Order.java=1375703928933
+D\:\\alina\\borsch\ returning\\andrey_korzhenevsky\\borsch-core\\src\\main\\java\\com\\exadel\\borsch\\service\\impl\\UserServiceImpl.java=1375366195919
+D\:\\alina\\borsch\ returning\\andrey_korzhenevsky\\borsch-core\\src\\main\\java\\com\\exadel\\borsch\\dao\\OrderDAO.java=1375703425096
+D\:\\alina\\borsch\ returning\\andrey_korzhenevsky\\borsch-core\\src\\main\\java\\com\\exadel\\borsch\\entity\\DishInOrder.java=1375703853414
+configuration*?=F9BFD51F625FF526EEB71A9E1B9598DA227C0F91
+D\:\\alina\\borsch\ returning\\andrey_korzhenevsky\\borsch-core\\src\\main\\java\\com\\exadel\\borsch\\dao\\impl\\DishInOrderDAOImpl.java=1375703310145
+D\:\\alina\\borsch\ returning\\andrey_korzhenevsky\\borsch-core\\src\\main\\java\\com\\exadel\\borsch\\service\\impl\\OrderServiceImpl.java=1375217334000
+D\:\\alina\\borsch\ returning\\andrey_korzhenevsky\\borsch-core\\src\\main\\java\\com\\exadel\\borsch\\entity\\Registration.java=1375103284575
+D\:\\alina\\borsch\ returning\\andrey_korzhenevsky\\borsch-core\\src\\main\\java\\com\\exadel\\borsch\\dao\\DishInOrderDAO.java=1375691805681
+D\:\\alina\\borsch\ returning\\andrey_korzhenevsky\\borsch-core\\src\\main\\java\\com\\exadel\\borsch\\service\\DishService.java=1375201621359
+D\:\\alina\\borsch\ returning\\andrey_korzhenevsky\\borsch-core\\src\\main\\java\\com\\exadel\\borsch\\dao\\UserDAO.java=1375365292327

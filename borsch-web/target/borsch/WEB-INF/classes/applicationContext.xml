@@ -26,4 +26,8 @@
     <bean id="dishService" class="com.exadel.borsch.service.impl.DishServiceImpl"/>
 
     <bean id="userService" class="com.exadel.borsch.service.impl.UserServiceImpl"/>
+
+    <bean id="orderService" class="com.exadel.borsch.service.impl.OrderServiceImpl"/>
+
+    <bean id="dishInOrderService" class="com.exadel.borsch.service.impl.DishInOrderServiceImpl"/>
 </beans>

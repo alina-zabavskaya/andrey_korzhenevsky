@@ -68,7 +68,6 @@ public class IndexController {
         }
         model.addAttribute("username", name);
         Map params = new HashMap();
-//        params.put("dishes", dishService.list(selectedDate));
         params.put("dishes", dishService.list());
         return new ModelAndView("index", params);
     }

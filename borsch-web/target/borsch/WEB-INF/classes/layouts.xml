@@ -40,4 +40,13 @@
     <definition name="users.list" extends="default">
         <put-attribute name="body" value="/WEB-INF/jsp/views/users-list.jspx"/>
     </definition>
+
+    <definition name="admin.orders" extends="default">
+        <put-attribute name="body" value="/WEB-INF/jsp/views/admin/orders.jspx"/>
+    </definition>
+
+    <definition name="admin/cancels" extends="default">
+        <put-attribute name="body" value="/WEB-INF/jsp/views/admin/cancels.jspx"/>
+    </definition>
+
 </tiles-definitions>

@@ -45,4 +45,12 @@
         <property name="jdbcTemplate" ref="jdbcTemplate"/>
     </bean>
 
+    <bean id="orderDAO" class="com.exadel.borsch.dao.impl.OrderDAOImpl">
+        <property name="jdbcTemplate" ref="jdbcTemplate"/>
+    </bean>
+
+    <bean id="dishInOrderDAO" class="com.exadel.borsch.dao.impl.DishInOrderDAOImpl">
+        <property name="jdbcTemplate" ref="jdbcTemplate"/>
+    </bean>
+
 </beans>

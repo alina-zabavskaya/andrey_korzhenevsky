@@ -24,7 +24,7 @@
         <![CDATA[<script src="${pageContext.servletContext.contextPath}/js/bootstrap.min.js"></script>]]>
     </head>
     <body>
-    <!--Login <jsp:expression>request.getUserPrincipal()</jsp:expression>-->
+
     <div id="page">
         <div class="wrp_ctr">
             <tiles:insertAttribute name="header"/>
@@ -44,6 +44,9 @@
                                     </li>
                                     <li>
                                         <a href="${pageContext.servletContext.contextPath}/admin/users/?remove=true">Удалить пользователя</a>
+                                    </li>
+                                    <li>
+                                        <a href="${pageContext.servletContext.contextPath}/admin/orders">Заказы</a>
                                     </li>
                                 </ul>
                             </div>

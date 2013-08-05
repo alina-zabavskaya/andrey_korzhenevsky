@@ -39,14 +39,14 @@
     <table name="dish_in_order" schema="" catalog="borsh" type="TABLE">
       <column name="dish_in_order_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true" />
       <column name="dish_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4" />
-      <column name="number" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4" />
-      <column name="order" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4" />
+      <column name="onumber" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4" />
+      <column name="oorder" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4" />
       <primary-key name="PRIMARY" columns="dish_in_order_id" />
     </table>
-    <table name="order" schema="" catalog="borsh" type="TABLE">
+    <table name="oorder" schema="" catalog="borsh" type="TABLE">
       <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true" />
       <column name="user_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4" />
-      <column name="data" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93" />
+      <column name="odata" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93" />
       <primary-key name="PRIMARY" columns="id" />
     </table>
     <table name="user" schema="" catalog="borsh" type="TABLE">
