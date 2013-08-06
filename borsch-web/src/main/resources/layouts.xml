@@ -41,6 +41,10 @@
         <put-attribute name="body" value="/WEB-INF/jsp/views/users-list.jspx"/>
     </definition>
 
+    <definition name="markDish" extends="default">
+        <put-attribute name="body" value="/WEB-INF/jsp/views/admin/markDish.jspx"/>
+    </definition>
+
     <definition name="admin.orders" extends="default">
         <put-attribute name="body" value="/WEB-INF/jsp/views/admin/orders.jspx"/>
     </definition>

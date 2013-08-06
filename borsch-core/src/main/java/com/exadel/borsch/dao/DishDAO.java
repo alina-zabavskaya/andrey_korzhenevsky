@@ -11,6 +11,10 @@ public interface DishDAO {
     Dish findById(Integer id);
     void saveDish(Dish dish);
     void deleteDish(Integer id);
+    List<Dish> getProducts(String selectedDate);
+    List<Integer> getDishId();
+    void insertDishMark(String date, int dish_id);
+    void deleteDishMark(String date, int dish_id);
+    int getDishAccessCount(String date, int dish_id);
 
-    List<Dish> getProducts(Date selectedDate);
 }

@@ -3,17 +3,22 @@ package com.exadel.borsch.web.controllers;
 import com.exadel.borsch.entity.Dish;
 import com.exadel.borsch.service.DishInOrderService;
 import com.exadel.borsch.service.DishService;
+import com.exadel.borsch.service.DateService;
 import com.exadel.borsch.service.OrderService;
 import com.exadel.borsch.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
 
@@ -27,6 +32,9 @@ public class AdminController {
 
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private DateService dateService;
 
     @Autowired
     private OrderService orderService;
@@ -56,6 +64,39 @@ public class AdminController {
         Map params = new HashMap();
         params.put("users", userService.list());
         return new ModelAndView("users.list", params);
+    }
+
+    @RequestMapping(value = "/markdish/{date}", method = RequestMethod.GET)
+    public String markDish(ModelMap model, @PathVariable() String date) {
+        String selectedDate = dateService.getDateByString(date);
+        model.put("date", selectedDate);
+        model.put("list", dishService.getProducts(selectedDate));
+        return "markDish";
+    }
+
+    @RequestMapping(value = "/markdish", method = RequestMethod.GET)
+    public String markDishGet(ModelMap model) {
+        model.put("date", dateService.getCurrentDate());
+        model.put("list", dishService.getProducts(dateService.getCurrentDate()));
+        return "markDish";
+    }
+
+
+    @RequestMapping(value = "/markdish", method = RequestMethod.POST)
+    public String markDishPost(WebRequest request, ModelMap model) {
+        Map map = new HashMap();
+        Iterator<String> it = request.getParameterNames();
+        while (it.hasNext()) {
+            String next = it.next();
+            if (next.matches("[0-9]+")) {
+                map.put(next, request.getParameter(next));
+//                System.out.println(next + " " + request.getParameter(next));
+            }
+        }
+        dishService.markDish(map, request.getParameter("date"));
+        model.put("date", dateService.getCurrentDate());
+        model.put("list", dishService.getProducts(dateService.getCurrentDate()));
+        return "markDish";
     }
 
     @RequestMapping(value = "/orders", method = RequestMethod.GET)

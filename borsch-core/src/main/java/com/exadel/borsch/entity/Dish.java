@@ -6,7 +6,7 @@ public class Dish {
     private Integer price;
     private String info;
     private String img;
-
+    private int dateAccess;
 
 
     public Dish(Integer id, String name, Integer price, String info, String img) {
@@ -15,7 +15,15 @@ public class Dish {
         this.price = price;
         this.info = info;
         this.img = img;
+    }
 
+    public Dish(Integer id, String name, Integer price, String info, String img, int dateAccess) {
+        this.id = id;
+        this.name = name;
+        this.price = price;
+        this.info = info;
+        this.img = img;
+        this.dateAccess = dateAccess;
     }
 
     public Dish() {
@@ -25,6 +33,14 @@ public class Dish {
         this.name = name;
         this.price = price;
         this.info = info;
+    }
+
+    public int getDateAccess() {
+        return dateAccess;
+    }
+
+    public void setDateAccess(int dateAccess) {
+        this.dateAccess = dateAccess;
     }
 
     public String getInfo() {
