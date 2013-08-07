@@ -60,10 +60,10 @@
                                         <a href="${pageContext.servletContext.contextPath}/admin/adddish">Добавить блюдо</a>
                                     </li>
                                     <li>
-                                        <a href="${pageContext.servletContext.contextPath}/admin/adddish">Редактировать блюдо</a>
+                                        <a href="${pageContext.servletContext.contextPath}/admin/dishes/?edit=true">Редактировать блюдо</a>
                                     </li>
                                     <li>
-                                        <a href="${pageContext.servletContext.contextPath}/admin/adddish">Удалить блюдо</a>
+                                        <a href="${pageContext.servletContext.contextPath}/admin/dishes/?remove=true">Удалить блюдо</a>
                                     </li>
                                 </ul>
                             </div>

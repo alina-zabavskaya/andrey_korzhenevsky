@@ -1,44 +1,56 @@
-<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" xmlns="http://www.w3.org/1999/xhtml" version="2.0"
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page"
+          xmlns="http://www.w3.org/1999/xhtml" version="2.0"
           xmlns:c="http://java.sun.com/jsp/jstl/core"
         >
     <script type="text/javascript">
         jQuery(document).ready(function(){$("#success").hide()})
-        function addSubmit() {
-            var name = $('#userName').val()
-            var price = $('#passord').val()
-            var info = $('#confirmPassword').val()
-            var info = $('#email').val()
-            $.post("${pageContext.servletContext.contextPath}/",
-                    {name: name,price: price,info: info}).done($("#success").show(1000))
+
+        function registration() {
+            var username = $('#userName').val();
+            var password = $('#userPassword').val();
+             var userinfo = $('#info').val()
+            var email = $('#userEmail').val();
+            console.log(username+"     "+password+"     "+userinfo);
+            $.post("${pageContext.servletContext.contextPath}/registration",
+                    {userName: username, password: password, userinfo:info, email: email}
+            ).done(function(){$("#success").show(1000)})
         }
     </script>
+    <div class="content">
+    <c:if test="${not empty success}">
+        <c:out value="${success}"/>
+    </c:if>
         <div class="span3" >
-        <form class="form-horizontal">
+        <div class="form-horizontal">
             <ul>
                 <li>
                     Имя
                     <input name="name" id="userName"/>
                 </li>
                 <li>
-                    Пороль
-                    <input name="price" id="passord"/>
+                    Пaроль
+                    <input name="password" id="userPassword" type="password"/>
                 </li>
                 <li>
-                    Подтвердите пороль
-                    <input name="price" id="confirmPassword"/>
+                    Подтвердите пaроль
+                    <input name="confirmPassword" id="confirmPassword" type="password"/>
+                </li>
+                <li>
+                    Инфо
+                    <input name="info" id="info"/>
                 </li>
                 <li>
                     e-mail
-                    <input name="info" id="email">
+                    <input name="email" id="userEmail">
                         <jsp:text/>
                     </input>
                 </li>
                 <li>
-                    <input type="button" value="Зарегистрироваться" name="add" onclick="addSubmit()" class="btn"/>
+                    <input type="submit" value="Зарегистрироваться" name="add" onclick="registration()" class="btn"/>
                 </li>
             </ul>
             <div class="alert alert-success" id = "success">Вы зарегестрированны</div>
-        </form>
+        </div>
      </div>
-
+     </div>
 </jsp:root>

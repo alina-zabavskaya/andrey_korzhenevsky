@@ -46,9 +46,9 @@ public class AdminController {
                           Model model) {
         Dish dish = new Dish(name, price, info);
         dish.setImg("exadel.png");
-        model.addAttribute("success", "Блюдо добавлено.");
+        model.addAttribute("success", "Блюдо добавлено");
         dishService.saveDish(dish);
-        return "enter";
+        return "/enter";
     }
 
     @RequestMapping(value = "/users", method = RequestMethod.GET)
@@ -56,6 +56,12 @@ public class AdminController {
         Map params = new HashMap();
         params.put("users", userService.list());
         return new ModelAndView("users.list", params);
+    }
+    @RequestMapping(value = "/dishes", method = RequestMethod.GET)
+    public ModelAndView dishes() {
+        Map params = new HashMap();
+        params.put("dishes", dishService.list());
+        return new ModelAndView("dishes.list", params);
     }
 
     @RequestMapping(value = "/orders", method = RequestMethod.GET)

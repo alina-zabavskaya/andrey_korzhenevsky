@@ -5,31 +5,39 @@
         version="2.0">
 
     <div class="content">
-        <dl>
+        <table class = "table table-hover">
+        <thead>
+        <tr>
+            <th>id заказа</th>
+            <th>дата</th>
+            <th>логин user</th>
+            <th>блюда</th>
+        </tr>
+        </thead>
+            <tbody>
             <c:forEach var="order" items="${orders}">
-                <dt class="elem">
-                    id заказа:${order.id}
-                    дата:${order.data}
+                <tr class="elem">
+                    <th>${order.id}</th>
+                    <th>${order.data}</th>
                     <c:forEach var="user" items="${users}">
                         <c:if test="${order.userId==user.id}">
-                            Логин:${user.login}
+                           <th>${user.login}</th>
                         </c:if>
                     </c:forEach>
-                    <br/>
+                    <th>
                     <c:forEach var="dio" items="${dios}">
                         <c:if test="${dio.oorder==order.id}">
                             <c:forEach var="dish" items="${dishes}">
                                 <c:if test="${dio.dishId==dish.id}">
                                     ${dish.name}
-                                    <br/>
                                 </c:if>
                             </c:forEach>
                         </c:if>
                     </c:forEach>
-                    <br/>
-                </dt>
+                    </th>
+                </tr>
             </c:forEach>
-
-        </dl>
+        </tbody>
+       </table>
     </div>
 </jsp:root>

@@ -28,6 +28,7 @@
       <column name="img" sqlType="VARCHAR" length="45" precision="0" nullable="true" jdbcType="12" />
       <primary-key name="PRIMARY" columns="id" />
       <exported-key name="dish_access_ibfk_1" table="dish_access" schema="" catalog="borsh" columns="dish_id" />
+      <exported-key name="dish_in_order" table="dish_in_order" schema="" catalog="borsh" columns="dish_id" />
     </table>
     <table name="dish_access" schema="" catalog="borsh" type="TABLE">
       <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true" />
@@ -38,10 +39,12 @@
     </table>
     <table name="dish_in_order" schema="" catalog="borsh" type="TABLE">
       <column name="dish_in_order_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true" />
-      <column name="dish_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4" />
+      <column name="dish_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" />
       <column name="onumber" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4" />
       <column name="oorder" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4" />
       <primary-key name="PRIMARY" columns="dish_in_order_id" />
+      <foreign-key name="dish_in_order" columns="dish_id" ref-table="dish" ref-schema="" ref-catalog="borsh" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2" />
+      <index name="dish_in_order_idx" unique="false" columns="dish_id" />
     </table>
     <table name="oorder" schema="" catalog="borsh" type="TABLE">
       <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true" />

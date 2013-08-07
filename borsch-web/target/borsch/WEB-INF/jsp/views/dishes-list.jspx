@@ -5,16 +5,39 @@
         version="2.0">
 
     <div class="content">
-        <dl>
+        <table class = "table table-hover">
+            <thead>
+            <tr>
+                <th>Название</th>
+                <th>Описание</th>
+                <th>Цена</th>
+            </tr>
+            </thead>
+            <tbody>
             <c:forEach var="dish" items="${dishes}">
-            <dt class="elem">
-                <a href="#">
-                    <strong>${dish.name}</strong>
-                </a>
-                Price: ${dish.price}<br/>
-                ${dish.info}
-            </dt>
+            <tr class="elem">
+                <th>${dish.name}</th>
+                <th>${dish.price}</th>
+                <th>${dish.info}</th>
+                <c:if test = "${not empty param.edit}">
+                    <td>
+                        <button type="submit"  class="btn">
+                            Редактировать
+                            <i class="icon-pencil"></i>
+                        </button>
+                    </td>
+                </c:if>
+                <c:if test = "${not empty param.remove}">
+                    <td>
+                        <button type="submit"  class="btn">
+                            Удалить
+                            <i class="icon-remove"></i>
+                        </button>
+                    </td>
+                </c:if>
+            </tr>
             </c:forEach>
-        </dl>
+            </tbody>
+        </table>
     </div>
 </jsp:root>

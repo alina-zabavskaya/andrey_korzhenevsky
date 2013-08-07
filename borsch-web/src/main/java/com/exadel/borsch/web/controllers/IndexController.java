@@ -88,18 +88,19 @@ public class IndexController {
         return "enter";
     }
 
-    @RequestMapping("/registration")
-    public String registration(ModelMap model) {
+    @RequestMapping(value = "/registration" , method = RequestMethod.GET)
+    public String registration() {
         return "registration";
     }
-    @RequestMapping(value = "/adddish", method = RequestMethod.POST)
+    @RequestMapping(value = "/registration", method = RequestMethod.POST)
     public String addUser(@RequestParam String userName,
                           @RequestParam String password,
-                          @RequestParam String confimPassword,
+                          @RequestParam String info,
                           @RequestParam String email,
                           Model model) {
-        User user = new User(userName, password, confimPassword, email);
+        User user = new User(userName, password, info, email);
         user.setRole("ROLE_USER");
+        model.addAttribute("success", "Вы зарегистрированны");
         userService.saveUser(user);
         return "/enter";
     }
