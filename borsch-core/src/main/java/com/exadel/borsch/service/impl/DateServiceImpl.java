@@ -15,7 +15,7 @@ public class DateServiceImpl implements DateService {
     @Override
     public String getDateByString(String date) {
         String resultDate;
-        SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("dd-MM-yyyy");
+        SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd");
         if (date == null) {
             resultDate = getCurrentDate();
         } else {

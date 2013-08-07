@@ -13,10 +13,10 @@ import java.util.List;
 
 
 public class OrderDAOImpl extends JdbcDaoSupport implements OrderDAO {
-    private static final String QUERY_SELECT_ALL = "select id, user_id, odata from oorder";
+    private static final String QUERY_SELECT_ALL = "select id, user_id, odata, cancelled from oorder";
 
     private static final String QUERY_SELECT_BY_DATE =
-            "select id, user_id from oorder where odata=?";
+            "select id, user_id, odata, cancelled from oorder where odata=?";
 
     private static final String QUERY_ORDER_BY_ID = QUERY_SELECT_ALL + " where id=?";
 
@@ -36,7 +36,8 @@ public class OrderDAOImpl extends JdbcDaoSupport implements OrderDAO {
             return new Order(
                     resultSet.getInt("id"),
                     resultSet.getInt("user_id"),
-                    resultSet.getDate("odata")
+                    resultSet.getDate("odata"),
+                    resultSet.getInt("cancelled")
             );
         }
     };

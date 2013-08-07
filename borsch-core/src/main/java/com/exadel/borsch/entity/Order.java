@@ -4,13 +4,15 @@ import java.util.Date;
 
 public class Order {
     private Integer id;
-    private Integer userId;
+    private Integer user_id;
     private Date data;
+    private Integer cancelled;
 
-    public Order(Integer id, Integer userId, Date data) {
+    public Order(Integer id, Integer userId, Date data, Integer cancelled) {
         this.id = id;
-        this.userId = userId;
+        this.user_id = userId;
         this.data = data;
+        this.cancelled=cancelled;
     }
 
     public Date getData() {
@@ -21,17 +23,12 @@ public class Order {
         this.data = data;
     }
 
-//    public Order(Timestamp data, Integer userId) {
-//        this.data = data;
-//        this.user_id = userId;
-//    }
-
     public Integer getUserId() {
-        return userId;
+        return user_id;
     }
 
     public void setUserId(Integer userId) {
-        this.userId = userId;
+        this.user_id = userId;
     }
 
     public Integer getId() {
@@ -40,5 +37,13 @@ public class Order {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public Integer getCancelled() {
+        return cancelled;
+    }
+
+    public void setCancelled(Integer cancelled) {
+        this.cancelled = cancelled;
     }
 }

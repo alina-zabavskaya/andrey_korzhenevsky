@@ -48,6 +48,9 @@
                                     <li>
                                         <a href="${pageContext.servletContext.contextPath}/admin/orders">Заказы</a>
                                     </li>
+                                    <li>
+                                        <a href="${pageContext.servletContext.contextPath}/admin/cancels">Отмены</a>
+                                    </li>
                                 </ul>
                             </div>
                             <div class="btn-group">
