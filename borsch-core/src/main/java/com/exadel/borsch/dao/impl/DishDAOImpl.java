@@ -14,6 +14,12 @@ import java.util.List;
 
 public class DishDAOImpl extends JdbcDaoSupport implements DishDAO {
     private static final String QUERY_SELECT_ALL = "select id, name, price, info, img from dish";
+    private static final String QUERY_SELECT_ALL_WITH_ACCESS = "" +
+            "SELECT d.id, d.name, d.price, d.info, d.img, " +
+                "(SELECT COUNT(*) FROM dish_access a " +
+                "WHERE a.dish_id=d.id AND a.date=?) AS count " +
+            "FROM dish d";
+
     private static final String QUERY_SELECT_BY_DATE =
             "select d.id, d.name, d.price, d.info, d,img from dish d "
                     + "inner join dish_access da on da.dish_id=d.id "
@@ -27,6 +33,17 @@ public class DishDAOImpl extends JdbcDaoSupport implements DishDAO {
 
    // private static final String QUERY_DISH_UPDATE = "update dish set name=?, price=?, info=? where id=?";
 
+
+    private static final String QUERY_SELECT_DISH_ID = "SELECT DISTINCT id FROM dish";
+
+    private static final String QUERY_INSERT_DISH_ACCESS = "INSERT INTO dish_access (date, dish_id) VALUES (?, ?)";
+
+    private static final String QUERY_DELETE_ID = "DELETE FROM dish_access WHERE date=? AND dish_id=?";
+
+    private static final String QUERY_COUNT_DISH_ACCESS =
+            "SELECT COUNT(*) AS count FROM dish_access " +
+                    "WHERE date=? AND dish_id=?";
+
      private final RowMapper<Dish> dishRowMapper = new RowMapper<Dish>() {
          @Override
          public Dish mapRow(ResultSet resultSet, int rowNum) throws SQLException {
@@ -39,6 +56,29 @@ public class DishDAOImpl extends JdbcDaoSupport implements DishDAO {
              );
          }
      };
+
+
+    private final RowMapper<Dish> dishRowMapperWithAccess = new RowMapper<Dish>() {
+        @Override
+        public Dish mapRow(ResultSet resultSet, int rowNum) throws SQLException {
+            return new Dish(
+                    resultSet.getInt("id"),
+                    resultSet.getString("name"),
+                    resultSet.getInt("price"),
+                    resultSet.getString("info"),
+                    resultSet.getString("img"),
+                    resultSet.getInt("count")
+            );
+        }
+    };
+
+    private final RowMapper<Integer> dishIDRowMapper = new RowMapper<Integer>() {
+
+        @Override
+        public Integer mapRow(ResultSet rs, int rowNum) throws SQLException {
+            return new Integer(rs.getInt("id"));
+        }
+    };
 
     @Override
     public List<Dish> getProducts() {
@@ -68,12 +108,45 @@ public class DishDAOImpl extends JdbcDaoSupport implements DishDAO {
     }
 
     @Override
-    public List<Dish> getProducts(Date selectedDate) {
+    public List<Dish> getProducts(String selectedDate) {
         return getJdbcTemplate().query(
-                QUERY_SELECT_BY_DATE,
-                dishRowMapper,
+                QUERY_SELECT_ALL_WITH_ACCESS,
+                dishRowMapperWithAccess,
                 selectedDate
         );
+    }
+
+    @Override
+    public List<Integer> getDishId() {
+        return getJdbcTemplate().query(
+                QUERY_SELECT_DISH_ID,
+                dishIDRowMapper);
+    }
+
+
+    @Override
+    public void insertDishMark(String date, int dish_id) {
+        getJdbcTemplate().update(
+                QUERY_INSERT_DISH_ACCESS,
+                date,
+                dish_id);
+    }
+
+    @Override
+    public void deleteDishMark(String date, int dish_id) {
+        getJdbcTemplate().update(
+                QUERY_DELETE_ID,
+                date,
+                dish_id);
+    }
+
+
+    @Override
+    public int getDishAccessCount(String date, int dish_id) {
+        return getJdbcTemplate().queryForInt(
+                QUERY_COUNT_DISH_ACCESS,
+                date,
+                dish_id);
     }
 
     @Override

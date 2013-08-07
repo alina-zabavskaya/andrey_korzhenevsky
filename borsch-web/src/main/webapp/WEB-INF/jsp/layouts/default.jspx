@@ -65,6 +65,9 @@
                                     <li>
                                         <a href="${pageContext.servletContext.contextPath}/admin/dishes/?remove=true">Удалить блюдо</a>
                                     </li>
+                                    <li>
+                                        <a href="${pageContext.servletContext.contextPath}/admin/markdish">Редактировать меню</a>
+                                    </li>
                                 </ul>
                             </div>
                         </sec:authorize>
