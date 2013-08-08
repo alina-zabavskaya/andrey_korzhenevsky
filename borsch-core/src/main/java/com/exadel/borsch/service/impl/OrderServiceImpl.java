@@ -25,5 +25,18 @@ public class OrderServiceImpl implements OrderService {
     public List<Order> list(Date selectedDate) {
         return orderDAO.getOrdersByDate(selectedDate);
     }
+    @Transactional(propagation = Propagation.NEVER, readOnly = true)
+    @Override
+    public List<Order> cancels() {
+        return orderDAO.getAllCancels();
+    }
+
+    @Transactional(propagation = Propagation.NEVER, readOnly = true)
+    @Override
+    public List<Order> cancels(Date selectedDate) {
+        return orderDAO.getCancelsByDate(selectedDate);
+    }
+
+
 
 }

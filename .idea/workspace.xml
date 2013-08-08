@@ -5,38 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1247cfe1-0ef8-4806-9b04-d3165fb375e8" name="Default" comment="almost working project">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-web/src/main/java/com/exadel/borsch/web/controllers/AdminController.java" afterPath="$PROJECT_DIR$/borsch-web/src/main/java/com/exadel/borsch/web/controllers/AdminController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/service/impl/DateServiceImpl.java" afterPath="$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/service/impl/DateServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/dao/DishDAO.java" afterPath="$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/dao/DishDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/dao/impl/DishDAOImpl.java" afterPath="$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/dao/impl/DishDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/service/DishService.java" afterPath="$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/service/DishService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/service/impl/DishServiceImpl.java" afterPath="$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/service/impl/DishServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-web/src/main/java/com/exadel/borsch/web/controllers/IndexController.java" afterPath="$PROJECT_DIR$/borsch-web/src/main/java/com/exadel/borsch/web/controllers/IndexController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/entity/DishInOrder.java" afterPath="$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/entity/DishInOrder.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/entity/Order.java" afterPath="$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/entity/Order.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/dao/OrderDAO.java" afterPath="$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/dao/OrderDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/dao/impl/OrderDAOImpl.java" afterPath="$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/dao/impl/OrderDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/entity/User.java" afterPath="$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/entity/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/dao/impl/UserDAOImpl.java" afterPath="$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/dao/impl/UserDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/service/UserService.java" afterPath="$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/service/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/service/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/service/impl/UserServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-core/borsch-core.iml" afterPath="$PROJECT_DIR$/borsch-core/borsch-core.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-web/borsch-web.iml" afterPath="$PROJECT_DIR$/borsch-web/borsch-web.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch.iml" afterPath="$PROJECT_DIR$/borsch.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/borsch_web_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/borsch_web_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/service/OrderService.java" afterPath="$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/service/OrderService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/service/impl/OrderServiceImpl.java" afterPath="$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/service/impl/OrderServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/admin/cancels.jspx" afterPath="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/admin/cancels.jspx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-web/src/main/resources/datasource.xml" afterPath="$PROJECT_DIR$/borsch-web/src/main/resources/datasource.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/layouts/default.jspx" afterPath="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/layouts/default.jspx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/dishes-list.jspx" afterPath="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/dishes-list.jspx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-web/src/main/resources/layouts.xml" afterPath="$PROJECT_DIR$/borsch-web/src/main/resources/layouts.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/admin/markDish.jspx" afterPath="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/admin/markDish.jspx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/navigation.jspx" afterPath="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/navigation.jspx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/registration.jspx" afterPath="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/registration.jspx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-web/src/main/resources/spring-security.xml" afterPath="$PROJECT_DIR$/borsch-web/src/main/resources/spring-security.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/users-list.jspx" afterPath="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/users-list.jspx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/admin/orders.jspx" afterPath="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/admin/orders.jspx" />
     </list>
     <ignored path="borsch.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -93,7 +72,7 @@
     <file path="$PROJECT_DIR$/../../zakazy/andrey_korzhenevsky/borsch-web/src/main/resources/datasource.xml" changelist="1247cfe1-0ef8-4806-9b04-d3165fb375e8" time="1375691430054" ignored="false" />
     <file path="/OrderDAOImpl.java" changelist="1247cfe1-0ef8-4806-9b04-d3165fb375e8" time="1375706840656" ignored="false" />
     <file path="/DishInOrder.java" changelist="1247cfe1-0ef8-4806-9b04-d3165fb375e8" time="1375708641149" ignored="false" />
-    <file path="/orders.jspx" changelist="1247cfe1-0ef8-4806-9b04-d3165fb375e8" time="1375786605334" ignored="false" />
+    <file path="/orders.jspx" changelist="1247cfe1-0ef8-4806-9b04-d3165fb375e8" time="1375972469684" ignored="false" />
     <file path="$PROJECT_DIR$/../../borsch returning - Copy/andrey_korzhenevsky/borsch-web/src/main/webapp/WEB-INF/jsp/views/registration.jspx" changelist="1247cfe1-0ef8-4806-9b04-d3165fb375e8" time="1375775275577" ignored="false" />
     <file path="$PROJECT_DIR$/../../borsch returning - Copy/andrey_korzhenevsky/borsch-web/src/main/java/com/exadel/borsch/web/controllers/RegistrationController.java" changelist="1247cfe1-0ef8-4806-9b04-d3165fb375e8" time="1375775429959" ignored="false" />
     <file path="$PROJECT_DIR$/../../borsch returning - Copy/andrey_korzhenevsky/borsch-web/src/main/java/com/exadel/borsch/web/controllers/IndexController.java" changelist="1247cfe1-0ef8-4806-9b04-d3165fb375e8" time="1375775415424" ignored="false" />
@@ -269,19 +248,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users.jspx" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/admin/users.jspx">
+      <file leaf-file-name="RegistrationController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/borsch-web/src/main/java/com/exadel/borsch/web/controllers/RegistrationController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="389" selection-end="389" vertical-scroll-proportion="3.7692308">
+            <state line="47" column="71" selection-start="1525" selection-end="1525" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RegistrationController.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/borsch-web/src/main/java/com/exadel/borsch/web/controllers/RegistrationController.java">
+      <file leaf-file-name="orders.jspx" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/admin/orders.jspx">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="71" selection-start="1525" selection-end="1525" vertical-scroll-proportion="1.5271318">
+            <state line="55" column="13" selection-start="2113" selection-end="2113" vertical-scroll-proportion="0.7534626">
               <folding />
             </state>
           </provider>
@@ -315,7 +294,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/service/UserService.java" />
         <option value="$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/entity/User.java" />
         <option value="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/registration.jspx" />
         <option value="$PROJECT_DIR$/borsch-core/src/main/java/com/exadel/borsch/dao/impl/UserDAOImpl.java" />
@@ -331,6 +309,7 @@
         <option value="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/admin/users.jspx" />
         <option value="$PROJECT_DIR$/borsch-web/src/main/java/com/exadel/borsch/web/controllers/UserManagementController.java" />
         <option value="$PROJECT_DIR$/borsch-web/src/main/java/com/exadel/borsch/web/controllers/RegistrationController.java" />
+        <option value="$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/admin/orders.jspx" />
       </list>
     </option>
   </component>
@@ -1479,13 +1458,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/borsch-core/pmd.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="47" selection-start="837" selection-end="837" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/borsch-web/pmd.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="47" selection-start="837" selection-end="837" vertical-scroll-proportion="0.0">
@@ -1588,7 +1560,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/borsch-web/src/main/java/com/exadel/borsch/web/controllers/RegistrationController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="71" selection-start="1525" selection-end="1525" vertical-scroll-proportion="1.5271318">
+        <state line="47" column="71" selection-start="1525" selection-end="1525" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/borsch-web/src/main/webapp/WEB-INF/jsp/views/admin/orders.jspx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="13" selection-start="2113" selection-end="2113" vertical-scroll-proportion="0.7534626">
           <folding />
         </state>
       </provider>
