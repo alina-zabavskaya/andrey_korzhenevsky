@@ -8,17 +8,18 @@ import org.springframework.jdbc.core.support.JdbcDaoSupport;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+
 import java.util.Date;
 import java.util.List;
 
 
 public class DishDAOImpl extends JdbcDaoSupport implements DishDAO {
     private static final String QUERY_SELECT_ALL = "select id, name, price, info, img from dish";
-    private static final String QUERY_SELECT_ALL_WITH_ACCESS = "" +
-            "SELECT d.id, d.name, d.price, d.info, d.img, " +
-                "(SELECT COUNT(*) FROM dish_access a " +
-                "WHERE a.dish_id=d.id AND a.date=?) AS count " +
-            "FROM dish d";
+    private static final String QUERY_SELECT_ALL_WITH_ACCESS =
+            "SELECT d.id, d.name, d.price, d.info, d.img, "
+                + "(SELECT COUNT(*) FROM dish_access a "
+                + "WHERE a.dish_id=d.id AND a.date=?) AS count "
+                +"FROM dish d";
 
     private static final String QUERY_SELECT_BY_DATE =
             "select d.id, d.name, d.price, d.info, d,img from dish d "
@@ -41,8 +42,8 @@ public class DishDAOImpl extends JdbcDaoSupport implements DishDAO {
     private static final String QUERY_DELETE_ID = "DELETE FROM dish_access WHERE date=? AND dish_id=?";
 
     private static final String QUERY_COUNT_DISH_ACCESS =
-            "SELECT COUNT(*) AS count FROM dish_access " +
-                    "WHERE date=? AND dish_id=?";
+            "SELECT COUNT(*) AS count FROM dish_access "
+                    + "WHERE date=? AND dish_id=?";
 
      private final RowMapper<Dish> dishRowMapper = new RowMapper<Dish>() {
          @Override
@@ -149,6 +150,7 @@ public class DishDAOImpl extends JdbcDaoSupport implements DishDAO {
                 dish_id);
     }
 
+
     @Override
     public void saveDish(Dish dish) {
         getJdbcTemplate().update(
@@ -159,6 +161,7 @@ public class DishDAOImpl extends JdbcDaoSupport implements DishDAO {
                 dish.getImg()
         );
     }
+
 }
 
 

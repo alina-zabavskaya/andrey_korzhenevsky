@@ -10,6 +10,8 @@ public class User implements Serializable {
     private String info;
     private String email;
 
+    public User(){};
+
     public User(Integer id, String login, String password, String role, String info, String email) {
         this.id = id;
         this.login = login;

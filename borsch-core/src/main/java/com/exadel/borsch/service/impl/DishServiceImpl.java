@@ -21,6 +21,11 @@ public class DishServiceImpl implements DishService {
         return dishDAO.getProducts();
     }
 
+//    @Override
+//    public List<Dish> list(Date selectedDate) {
+//        return null;
+//    }
+
 //    @Transactional(propagation = Propagation.NEVER, readOnly = true)
 //    @Override
 //    public List<Dish> list(Date selectedDate) {
@@ -38,7 +43,6 @@ public class DishServiceImpl implements DishService {
         return dishDAO.getProducts();
     }
 
-
     @Override
     public void markDish(Map map, String date) {
         List<Integer> id = dishDAO.getDishId();
@@ -47,7 +51,7 @@ public class DishServiceImpl implements DishService {
             if (map.containsKey(selectedID) && map.get(selectedID).equals("1")) {
                 if (dishDAO.getDishAccessCount(date, id.get(i)) == 0) {
                     dishDAO.insertDishMark(date, id.get(i));
-                }
+    }
             } else {
                 dishDAO.deleteDishMark(date, id.get(i));
             }

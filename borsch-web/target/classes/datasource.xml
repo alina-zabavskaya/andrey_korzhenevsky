@@ -37,19 +37,19 @@
         <property name="dataSource" ref="dataSource"/>
     </bean>
 
-    <bean id="dishDAO" class="com.exadel.borsch.dao.impl.DishDAOImpl">
-        <property name="jdbcTemplate" ref="jdbcTemplate"/>
-    </bean>
-
-    <bean id="userDAO" class="com.exadel.borsch.dao.impl.UserDAOImpl">
-        <property name="jdbcTemplate" ref="jdbcTemplate"/>
-    </bean>
-
     <bean id="orderDAO" class="com.exadel.borsch.dao.impl.OrderDAOImpl">
         <property name="jdbcTemplate" ref="jdbcTemplate"/>
     </bean>
 
     <bean id="dishInOrderDAO" class="com.exadel.borsch.dao.impl.DishInOrderDAOImpl">
+        <property name="jdbcTemplate" ref="jdbcTemplate"/>
+    </bean>
+
+    <bean id="dishDAO" class="com.exadel.borsch.dao.impl.DishDAOImpl">
+        <property name="jdbcTemplate" ref="jdbcTemplate"/>
+    </bean>
+
+    <bean id="userDAO" class="com.exadel.borsch.dao.impl.UserDAOImpl">
         <property name="jdbcTemplate" ref="jdbcTemplate"/>
     </bean>
 

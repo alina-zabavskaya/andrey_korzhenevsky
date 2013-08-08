@@ -17,6 +17,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -59,12 +62,12 @@ public class AdminController {
         return "/enter";
     }
 
-    @RequestMapping(value = "/users", method = RequestMethod.GET)
-    public ModelAndView users() {
-        Map params = new HashMap();
-        params.put("users", userService.list());
-        return new ModelAndView("users.list", params);
-    }
+//    @RequestMapping(value = "/users", method = RequestMethod.GET)
+//    public ModelAndView users() {
+//        Map params = new HashMap();
+//        params.put("users", userService.list());
+//        return new ModelAndView("users.list", params);
+//    }
     @RequestMapping(value = "/dishes", method = RequestMethod.GET)
     public ModelAndView dishes() {
         Map params = new HashMap();
@@ -114,6 +117,65 @@ public class AdminController {
         params.put("dios", dishInOrderService.list());
         return new ModelAndView("admin.orders", params);
     }
+
+    @RequestMapping(value = "/orders/{date}", method = RequestMethod.GET)
+    public ModelAndView ordersDate(@PathVariable() String date) {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+
+        Date selectedDate;
+        if (date == null) {
+            selectedDate = new Date();
+        } else {
+            try {
+                selectedDate = dateFormat.parse(date);
+            } catch (ParseException e) {
+                selectedDate = new Date();
+            }
+        }
+        Map params = new HashMap();
+        params.put("orders", orderService.list(selectedDate));
+        params.put("users", userService.list());
+        params.put("dishes", dishService.list());
+        params.put("dios", dishInOrderService.list());
+        return new ModelAndView("admin.orders", params);
+    }
+
+    @RequestMapping(value = "/cancels", method = RequestMethod.GET)
+    public ModelAndView cancels() {
+        Map params = new HashMap();
+        params.put("orders", orderService.list());
+        params.put("users", userService.list());
+        params.put("dishes", dishService.list());
+        params.put("dios", dishInOrderService.list());
+        return new ModelAndView("admin.cancels", params);
+    }
+
+    @RequestMapping(value = "/cancels/{date}", method = RequestMethod.GET)
+    public ModelAndView cancelsDate(@PathVariable() String date) {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+
+        Date selectedDate;
+        if (date == null) {
+            selectedDate = new Date();
+        } else {
+            try {
+                selectedDate = dateFormat.parse(date);
+            } catch (ParseException e) {
+                selectedDate = new Date();
+            }
+        }
+        Map params = new HashMap();
+        params.put("orders", orderService.list(selectedDate));
+        params.put("users", userService.list());
+        params.put("dishes", dishService.list());
+        params.put("dios", dishInOrderService.list());
+        return new ModelAndView("admin.cancels", params);
+    }
+
+//    @RequestMapping(value = "/{id}",method = RequestMethod.DELETE)
+//    public void delete (Integer id){
+//        dishService.deleteDish(id);
+//    }
 }
 
 

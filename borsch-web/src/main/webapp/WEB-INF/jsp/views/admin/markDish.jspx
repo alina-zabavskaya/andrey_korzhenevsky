@@ -11,15 +11,17 @@
                     <dt class="elem">
                         <a href="#">
                             <strong><c:out value="${dish.name}"/></strong></a>
-                        <img src="#" width="180" height="200"/>
-
-                        <span><c:out value="${dish.price}"/></span>
+                        <img src="${pageContext.servletContext.contextPath}/img/${dish.img}" width="180" height="200"/>
+                        <strong id = "info">${dish.info}</strong>
+                        <label class="checkbox">
                         <c:if test="${dish.dateAccess == 1}">
                             <input type="checkbox" name="${dish.id}" value="1" checked="checked"/>
                         </c:if>
                         <c:if test="${dish.dateAccess != 1}">
                             <input type="checkbox" name="${dish.id}" value="1"/>
                         </c:if>
+                        <span><c:out value="${dish.price}"/></span>
+                        </label>
                     </dt>
                 </c:forEach>
                 <dt class="clear">

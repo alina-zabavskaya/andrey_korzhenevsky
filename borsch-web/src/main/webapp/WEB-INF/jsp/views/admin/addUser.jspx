@@ -1,0 +1,55 @@
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" xmlns="http://www.w3.org/1999/xhtml" version="2.0"
+          xmlns:form="http://www.springframework.org/tags/form"
+        >
+    <!--<link rel="stylesheet" type="text/css" href="css/registration"/>-->
+    <div>
+        <h2>Add user</h2>
+        <form:form commandName="user">
+
+       <table>
+
+           <tr>
+               <td><form:label path="id">Id</form:label></td>
+               <td><form:hidden path="id"></form:hidden></td>
+           </tr>
+
+       <tr>
+            <td><form:label path="login">Login:</form:label></td>
+            <td><form:input path="login"></form:input></td>
+        </tr>
+        <tr>
+            <td><form:label path="password">Password:</form:label></td>
+            <td><form:input path="password"></form:input></td>
+        </tr>
+
+        <tr>
+           <td><form:label path="role">Role</form:label></td>
+           <td><form:hidden path="role"></form:hidden></td>
+        </tr>
+
+        <tr>
+                <td><form:label path="role">Role:</form:label></td>
+                <td><form:radiobutton path="role" value="1" label="1"></form:radiobutton></td>
+                <td><form:radiobutton path="role" value="2" label="2"></form:radiobutton></td>
+        </tr>
+
+        <tr>
+            <td><form:label path="email">Email:</form:label></td>
+            <td><form:input path="email"></form:input></td>
+        </tr>
+
+        <tr>
+            <td><form:label path="info">Info:</form:label></td>
+            <td><form:textarea path="info" cols="35" rows="3"></form:textarea></td>
+        </tr>
+
+         <tr>
+             <form:button class="submit" type="submit">Submit Form</form:button>
+          </tr>
+
+
+       </table>
+
+    </form:form>
+    </div>
+</jsp:root>

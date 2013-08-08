@@ -13,13 +13,7 @@
         <put-attribute name="body" value=""/>
     </definition>
 
-    <definition name="dishes.user" extends="default">
-        <put-attribute name="body" value="/WEB-INF/jsp/views/dishes-user.jspx"/>
-    </definition>
 
-    <definition name="dishes.list" extends="default">
-        <put-attribute name="body" value="WEB-INF/jsp/views/dishes-list.jspx"/>
-    </definition>
 
     <definition name="index" extends="default">
         <put-attribute name="body" value="/WEB-INF/jsp/views/body.jspx"/>
@@ -37,16 +31,36 @@
         <put-attribute name="body" value="/WEB-INF/jsp/views/registration.jspx"/>
     </definition>
 
-    <definition name="users.list" extends="default">
-        <put-attribute name="body" value="/WEB-INF/jsp/views/users-list.jspx"/>
+    <!--<definition name="users.list" extends="default">-->
+        <!--<put-attribute name="body" value="/WEB-INF/jsp/views/users-list.jspx"/>-->
+    <!--</definition>-->
+
+    <definition name="dishes.list" extends="default">
+    <put-attribute name="body" value="/WEB-INF/jsp/views/dishes-list.jspx"/>
+    </definition>
+
+    <definition name="markDish" extends="default">
+        <put-attribute name="body" value="/WEB-INF/jsp/views/admin/markDish.jspx"/>
     </definition>
 
     <definition name="admin.orders" extends="default">
         <put-attribute name="body" value="/WEB-INF/jsp/views/admin/orders.jspx"/>
     </definition>
 
-    <definition name="admin/cancels" extends="default">
+    <definition name="admin.cancels" extends="default">
         <put-attribute name="body" value="/WEB-INF/jsp/views/admin/cancels.jspx"/>
+    </definition>
+
+    <definition name="admin/users" extends="default">
+        <put-attribute name="body" value="/WEB-INF/jsp/views/admin/users.jspx"/>
+    </definition>
+
+    <definition name="admin/editUser" extends="default">
+        <put-attribute name="body" value="/WEB-INF/jsp/views/admin/editUser.jspx"/>
+    </definition>
+
+    <definition name="admin/addUser" extends="default">
+        <put-attribute name="body" value="/WEB-INF/jsp/views/admin/addUser.jspx"/>
     </definition>
 
 </tiles-definitions>

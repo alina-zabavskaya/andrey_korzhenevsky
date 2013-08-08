@@ -1,31 +1,39 @@
-<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" xmlns="http://www.w3.org/1999/xhtml" version="2.0"
-          xmlns:c="http://java.sun.com/jsp/jstl/core"
-        >
-    <div class="content">
-        <c:if test="${not empty success}">
-            <c:out value="${success}"/>
-        </c:if>
-        <form method="post" action="${pageContext.servletContext.contextPath}/admin/adddish">
-            <ul>
-                <li>
-                    <span>Название</span>
-                    <input name="name"/>
-                </li>
-                <li>
-                    <span>Цена</span>
-                    <input name="price"/>
-                </li>
-                <li>
-                    <span>Информация</span>
-                    <textarea name="info">
-                        <jsp:text/>
-                    </textarea>
-                </li>
-                <li>
-                    <input type="submit" value="Добавить блюдо." name="add"/>
-                </li>
-            </ul>
-        </form>
+<jsp:root
+        xmlns:jsp="http://java.sun.com/JSP/Page"
+        xmlns:c="http://java.sun.com/jsp/jstl/core"
+        xmlns="http://www.w3.org/1999/xhtml"
+        version="2.0">
 
+    <div class="content">
+        <dl>
+            <c:forEach var="order" items="${orders}">
+                <c:if test="${order.cancelled==1}">
+                    <dt class="elem">
+                        <c:forEach var="user" items="${users}">
+                            <c:if test="${order.userId==user.id}">
+                                ${user.login}
+                                <br/>
+                            </c:if>
+                        </c:forEach>
+                        ${order.data}
+
+                        <c:forEach var="dio" items="${dios}">
+                            <c:if test="${dio.oorder==order.id}">
+                                <c:forEach var="dish" items="${dishes}">
+                                    <c:if test="${dio.dishId==dish.id}">
+                                        <br/>
+                                        ${dish.name}
+                                    </c:if>
+                                </c:forEach>
+                            </c:if>
+                        </c:forEach>
+                    </dt>
+                </c:if>
+
+
+            </c:forEach>
+
+
+        </dl>
     </div>
 </jsp:root>

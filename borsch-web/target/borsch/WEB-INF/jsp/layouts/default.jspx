@@ -13,15 +13,12 @@
         <link rel="stylesheet" type="text/css" href="${pageContext.servletContext.contextPath}/css/bootstrap-responsive.css"/>
         <link rel="stylesheet" type="text/css" href="${pageContext.servletContext.contextPath}/css/bootstrap.css"/>
 
-
-        <!--<link rel="apple-touch-icon-precomposed" sizes="72x72" href="${pageContext.servletContext.contextPath}/img/glyphicons-halflings-white.png"/>-->
-        <!--<link rel="stylesheet" type="text/css" href="${pageContext.servletContext.contextPath}/css/bootstrap.min.css"/>-->
-        <!--<link rel="stylesheet" type="text/css" href="css/registration/styles.css"/>-->
-        <!--<link rel="stylesheet" type="text/css" href="css/registration/reset.css"/>-->
-        <!--<link rel="stylesheet" type="text/css" href="css/registration/animate.css"/>-->
         <title>BORSH!</title>
         <![CDATA[<script src="${pageContext.servletContext.contextPath}/js/jquery-2.0.3.min.js" ></script>]]>
         <![CDATA[<script src="${pageContext.servletContext.contextPath}/js/bootstrap.min.js"></script>]]>
+        <![CDATA[<script src="${pageContext.servletContext.contextPath}/js/scripts/jtable/jquery.jtable.js"></script>]]>
+
+
     </head>
     <body>
 
@@ -31,7 +28,6 @@
             <div class="navbar">
                 <div class="navbar-inner">
                         <div class="container">
-                        <!--<a class="brand" href="${pageContext.servletContext.contextPath}">Меню</a>-->
                         <sec:authorize access="hasRole('ROLE_ADMIN')">
                             <div class="btn-group">
                                 <button class="btn dropdown-toggle" data-toggle="dropdown">
@@ -47,6 +43,9 @@
                                     </li>
                                     <li>
                                         <a href="${pageContext.servletContext.contextPath}/admin/orders">Заказы</a>
+                                    </li>
+                                    <li>
+                                        <a href="${pageContext.servletContext.contextPath}/admin/cancels">Отмены</a>
                                     </li>
                                 </ul>
                             </div>
@@ -64,6 +63,9 @@
                                     </li>
                                     <li>
                                         <a href="${pageContext.servletContext.contextPath}/admin/dishes/?remove=true">Удалить блюдо</a>
+                                    </li>
+                                    <li>
+                                        <a href="${pageContext.servletContext.contextPath}/admin/markdish">Редактировать меню</a>
                                     </li>
                                 </ul>
                             </div>

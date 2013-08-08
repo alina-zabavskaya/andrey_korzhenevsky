@@ -17,4 +17,5 @@ public interface DishDAO {
     void deleteDishMark(String date, int dish_id);
     int getDishAccessCount(String date, int dish_id);
 
+
 }

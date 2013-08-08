@@ -57,10 +57,10 @@
         <!--<security:logout logout-url="/logout" logout-success-url="/login.jsp" invalidate-session="true"/>-->
     </security:http>
 
-    <!--<bean id="passwordEncoder" class="org.springframework.security.authentication.encoding.Md5PasswordEncoder">-->
-    <!--<property name="encodeHashAsBase64" value="false"/>-->
-    <!--<property name="iterations" value="1"/>-->
-    <!--</bean>-->
+    <bean id="passwordEncoder" class="org.springframework.security.authentication.encoding.Md5PasswordEncoder">
+    <property name="encodeHashAsBase64" value="false"/>
+    <property name="iterations" value="1"/>
+    </bean>
 
     <!--<bean id="userDetailsService" class="com.exadel.borsch.security.MKEUserDetailsServiceImpl">-->
     <!--<property name="adminUsername" value="admin"/>-->
@@ -79,6 +79,7 @@
         user_role ur
         WHERE u.role = ur.role_id and u.login =? "
                     />
+        <security:password-encoder ref="passwordEncoder"/>
         </security:authentication-provider>
         <!--<security:authentication-provider user-service-ref="userDetailsService">-->
         <!--<security:password-encoder ref="passwordEncoder"/>-->

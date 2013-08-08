@@ -1,6 +1,8 @@
 package com.exadel.borsch.service;
 
 import com.exadel.borsch.entity.Dish;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Date;
 import java.util.List;
@@ -13,4 +15,7 @@ public interface DishService {
     List<Dish> getProducts();
     void markDish(Map map, String date);
     List<Dish> getProducts(String date);
+    //void deleteDish (Integer id);
+
+
 }

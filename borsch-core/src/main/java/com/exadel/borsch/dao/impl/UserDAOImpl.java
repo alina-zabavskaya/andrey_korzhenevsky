@@ -32,7 +32,7 @@ public class UserDAOImpl extends JdbcDaoSupport implements UserDAO {
     private static final String QUERY_DELETE_USER = "delete from user where id=?";
 
     private static final String QUERY_USER_INSERT = "insert into user (login, password, role, info, email)"
-            + " values(?,?,?,?,?) returning id";
+            + " values(?,?,?,?,?)";
 
    private static final String QUERY_USER_UPDATE = "update user set  login=?, password=?,role=?, info=?, email=?";
 
