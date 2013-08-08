@@ -34,6 +34,7 @@
                         <!--<a class="brand" href="${pageContext.servletContext.contextPath}">Меню</a>-->
                         <sec:authorize access="hasRole('ROLE_ADMIN')">
                             <div class="btn-group">
+
                                 <button class="btn dropdown-toggle" data-toggle="dropdown">
                                     Работа с пользователями
                                     <span class="caret"></span>

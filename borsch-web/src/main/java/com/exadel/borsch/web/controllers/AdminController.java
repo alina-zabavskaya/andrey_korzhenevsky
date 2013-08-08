@@ -107,9 +107,6 @@ public class AdminController {
     public ModelAndView orders() {
         Map params = new HashMap();
         params.put("orders", orderService.list());
-        params.put("users", userService.list());
-        params.put("dishes", dishService.list());
-        params.put("dios", dishInOrderService.list());
         return new ModelAndView("admin.orders", params);
     }
 
@@ -129,19 +126,13 @@ public class AdminController {
         }
         Map params = new HashMap();
         params.put("orders", orderService.list(selectedDate));
-        params.put("users", userService.list());
-        params.put("dishes", dishService.list());
-        params.put("dios", dishInOrderService.list());
         return new ModelAndView("admin.orders", params);
     }
 
     @RequestMapping(value = "/cancels", method = RequestMethod.GET)
     public ModelAndView cancels() {
         Map params = new HashMap();
-        params.put("orders", orderService.list());
-        params.put("users", userService.list());
-        params.put("dishes", dishService.list());
-        params.put("dios", dishInOrderService.list());
+        params.put("orders", orderService.cancels());
         return new ModelAndView("admin.cancels", params);
     }
 
@@ -160,10 +151,7 @@ public class AdminController {
             }
         }
         Map params = new HashMap();
-        params.put("orders", orderService.list(selectedDate));
-        params.put("users", userService.list());
-        params.put("dishes", dishService.list());
-        params.put("dios", dishInOrderService.list());
+        params.put("orders", orderService.cancels(selectedDate));
         return new ModelAndView("admin.cancels", params);
     }
 }

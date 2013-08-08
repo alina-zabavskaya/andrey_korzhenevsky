@@ -8,4 +8,6 @@ import java.util.List;
 public interface OrderService {
     List<Order> list();
     List<Order> list(Date selectedDate);
+    List<Order> cancels();
+    List<Order> cancels(Date selectedDate);
 }

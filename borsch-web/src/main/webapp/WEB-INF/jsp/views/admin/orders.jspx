@@ -5,28 +5,18 @@
         version="2.0">
 
     <div class="content">
+
         <dl>
             <c:forEach var="order" items="${orders}">
                 <dt class="elem">
                     id заказа:${order.id}
                     дата:${order.data}
-                    <c:forEach var="user" items="${users}">
-                        <c:if test="${order.userId==user.id}">
-                            Логин:${user.login}
-                        </c:if>
-                    </c:forEach>
+                    Логин:${order.userLogin}
                     <br/>
-                    <c:forEach var="dio" items="${dios}">
-                        <c:if test="${dio.oorder==order.id}">
-                            <c:forEach var="dish" items="${dishes}">
-                                <c:if test="${dio.dishId==dish.id}">
-                                    ${dish.name}
-                                    <br/>
-                                </c:if>
-                            </c:forEach>
-                        </c:if>
+                    <c:forEach items="${order.dishes}" var="item">
+                        ${item.dishName}  ${item.onumber}<br/>
                     </c:forEach>
-                    <br/>
+
                 </dt>
             </c:forEach>
 

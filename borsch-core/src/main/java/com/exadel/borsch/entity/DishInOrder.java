@@ -6,11 +6,18 @@ public class DishInOrder {
     private Integer dishId;
     private Integer onumber;
     private Integer oorder;
+    private String dishName;
 
     public DishInOrder(Integer dishId, Integer onumber, Integer oorder) {
         this.dishId = dishId;
         this.onumber = onumber;
         this.oorder = oorder;
+    }
+
+    public DishInOrder(Integer onumber, Integer oorder, String dishName) {
+        this.onumber = onumber;
+        this.oorder = oorder;
+        this.dishName = dishName;
     }
 
     public DishInOrder(Integer dishInOrderId, Integer dishId, Integer onumber, Integer oorder) {
@@ -29,20 +36,20 @@ public class DishInOrder {
         this.dishId = dishId;
     }
 
-    public Integer getId() {
+    public Integer getDishInOrderId() {
         return dishInOrderId;
     }
 
-    public void setId(Integer dishInOrderId) {
+    public void setDishInOrderId(Integer dishInOrderId) {
         this.dishInOrderId = dishInOrderId;
     }
 
-    public Integer getNumber() {
+    public Integer getOnumber() {
         return onumber;
     }
 
-    public void setNumber(Integer number) {
-        this.onumber = number;
+    public void setOnumber(Integer onumber) {
+        this.onumber = onumber;
     }
 
     public Integer getOorder() {
@@ -53,5 +60,12 @@ public class DishInOrder {
         this.oorder = oorder;
     }
 
+    public String getDishName() {
+        return dishName;
+    }
+
+    public void setDishName(String dishName) {
+        this.dishName = dishName;
+    }
 
 }
