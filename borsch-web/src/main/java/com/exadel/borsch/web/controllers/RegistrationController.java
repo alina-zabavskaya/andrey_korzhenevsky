@@ -58,9 +58,9 @@ public class RegistrationController {
         }
         System.out.println(user);
 
-//        if(!validate(user)){
+        if(!validate(user)){
           userService.addUser(user);
-//        }
+        }
 
         return "redirect:/";
     }
