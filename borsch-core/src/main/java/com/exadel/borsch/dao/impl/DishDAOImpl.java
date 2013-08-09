@@ -45,6 +45,8 @@ public class DishDAOImpl extends JdbcDaoSupport implements DishDAO {
             "SELECT COUNT(*) AS count FROM dish_access "
                     + "WHERE date=? AND dish_id=?";
 
+    private static final String QUERY_DELETE_BY_DISH_ID_FROM_ACCESS = "DELETE FROM dish_access WHERE dish_id=?" ;
+
      private final RowMapper<Dish> dishRowMapper = new RowMapper<Dish>() {
          @Override
          public Dish mapRow(ResultSet resultSet, int rowNum) throws SQLException {
@@ -150,6 +152,13 @@ public class DishDAOImpl extends JdbcDaoSupport implements DishDAO {
                 dish_id);
     }
 
+    @Override
+    public void deleteDishFromDishAccess(Integer dish_id) {
+        getJdbcTemplate().update(
+                QUERY_DELETE_BY_DISH_ID_FROM_ACCESS,
+                dish_id);
+    }
+
 
     @Override
     public void saveDish(Dish dish) {
@@ -161,6 +170,7 @@ public class DishDAOImpl extends JdbcDaoSupport implements DishDAO {
                 dish.getImg()
         );
     }
+
 
 }
 

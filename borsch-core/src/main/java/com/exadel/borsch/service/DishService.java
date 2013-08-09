@@ -15,7 +15,7 @@ public interface DishService {
     List<Dish> getProducts();
     void markDish(Map map, String date);
     List<Dish> getProducts(String date);
-    //void deleteDish (Integer id);
+    void deleteDish (String id);
 
 
 }

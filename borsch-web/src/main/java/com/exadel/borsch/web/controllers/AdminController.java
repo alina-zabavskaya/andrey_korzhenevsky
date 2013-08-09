@@ -75,6 +75,15 @@ public class AdminController {
         return new ModelAndView("dishes.list", params);
     }
 
+        @RequestMapping(value = "/deleteDish/{id}",method = RequestMethod.POST)
+    public ModelAndView deleteDish (@PathVariable String id){
+        dishService.deleteDish(id);
+
+        Map params = new HashMap();
+        params.put("dishes", dishService.list());
+        return new ModelAndView("redirect:dishes.list", params);
+    }
+
     @RequestMapping(value = "/markdish/{date}", method = RequestMethod.GET)
     public String markDish(ModelMap model, @PathVariable() String date) {
         String selectedDate = dateService.getDateByString(date);
@@ -160,10 +169,7 @@ public class AdminController {
         return new ModelAndView("admin.cancels", params);
     }
 
-//    @RequestMapping(value = "/{id}",method = RequestMethod.DELETE)
-//    public void delete (Integer id){
-//        dishService.deleteDish(id);
-//    }
+
 }
 
 

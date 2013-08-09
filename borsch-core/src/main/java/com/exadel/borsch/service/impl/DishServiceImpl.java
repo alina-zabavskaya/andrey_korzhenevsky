@@ -1,7 +1,9 @@
 package com.exadel.borsch.service.impl;
 
 import com.exadel.borsch.dao.DishDAO;
+import com.exadel.borsch.dao.DishInOrderDAO;
 import com.exadel.borsch.entity.Dish;
+import com.exadel.borsch.entity.DishInOrder;
 import com.exadel.borsch.service.DishService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Propagation;
@@ -14,6 +16,9 @@ import java.util.Map;
 public class DishServiceImpl implements DishService {
     @Autowired
     private DishDAO dishDAO;
+
+    @Autowired
+    private DishInOrderDAO dishInOrderDAO;
 
     @Transactional(propagation = Propagation.NEVER, readOnly = true)
     @Override
@@ -63,5 +68,15 @@ public class DishServiceImpl implements DishService {
         return dishDAO.getProducts(date);
     }
 
+    @Override
+    @Transactional(propagation =  Propagation.NEVER)
+    public void deleteDish(String id) {
+        List<DishInOrder> dishesInOrderById = dishInOrderDAO.getDishesInOrderById(new Integer(id));
+        if(!dishesInOrderById.isEmpty()) {
+           dishInOrderDAO.deleteOrder(new Integer(id));
+        }
+        dishDAO.deleteDishFromDishAccess(new Integer(id));
+        dishDAO.deleteDish(new Integer(id));
+    }
 
 }

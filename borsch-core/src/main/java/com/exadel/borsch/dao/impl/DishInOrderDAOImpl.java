@@ -17,6 +17,11 @@ public class DishInOrderDAOImpl extends JdbcDaoSupport implements DishInOrderDAO
             + "onumber, "
             + "oorder from dish_in_order";
 
+    private static final String QUERY_DISH_BY_ID_IN_DISH_IN_ORDER = "select * from dish_in_order"
+            + " where dish_id=?";
+
+    private  static final String QUERY_DELETE_BY_DISH_ID = "delete from dish_in_order"
+            + " where dish_id=?";
      private final RowMapper<DishInOrder> dishInOrderRowMapper = new RowMapper<DishInOrder>() {
          @Override
          public DishInOrder mapRow(ResultSet resultSet, int rowNum) throws SQLException {
@@ -37,6 +42,19 @@ public class DishInOrderDAOImpl extends JdbcDaoSupport implements DishInOrderDAO
         );
     }
 
+    @Override
+    public List<DishInOrder> getDishesInOrderById(Integer id) {
+        return getJdbcTemplate().query(
+                QUERY_DISH_BY_ID_IN_DISH_IN_ORDER,
+                new Object[]{id},
+                dishInOrderRowMapper
+        );
+    }
+
+    @Override
+    public void deleteOrder(Integer id) {
+        getJdbcTemplate().update(QUERY_DELETE_BY_DISH_ID, id);
+    }
 }
 
 

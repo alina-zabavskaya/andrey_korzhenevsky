@@ -30,6 +30,7 @@
                         <div class="container">
                         <sec:authorize access="hasRole('ROLE_ADMIN')">
                             <div class="btn-group">
+
                                 <button class="btn dropdown-toggle" data-toggle="dropdown">
                                     Работа с пользователями
                                     <span class="caret"></span>
@@ -59,10 +60,10 @@
                                         <a href="${pageContext.servletContext.contextPath}/admin/adddish">Добавить блюдо</a>
                                     </li>
                                     <li>
-                                        <a href="${pageContext.servletContext.contextPath}/admin/dishes/?edit=true">Редактировать блюдо</a>
+                                        <a href="${pageContext.servletContext.contextPath}/admin/dishes">Редактировать блюдо</a>
                                     </li>
                                     <li>
-                                        <a href="${pageContext.servletContext.contextPath}/admin/dishes/?remove=true">Удалить блюдо</a>
+                                        <a href="${pageContext.servletContext.contextPath}/admin/dishes">Удалить блюдо</a>
                                     </li>
                                     <li>
                                         <a href="${pageContext.servletContext.contextPath}/admin/markdish">Редактировать меню</a>

@@ -4,6 +4,12 @@
         xmlns="http://www.w3.org/1999/xhtml" version="2.0"
         >
 
+    <script type="text/javascript">
+        function deleteSubmit(dishId) {
+            $.post("${pageContext.servletContext.contextPath}/admin/deleteDish/"+dishId, {id: dishId})
+            $('#'+dishId).remove();
+        }
+    </script>
     <div class="content">
         <table class = "table table-hover">
             <thead>
@@ -15,26 +21,27 @@
             </thead>
             <tbody>
             <c:forEach var="dish" items="${dishes}">
-            <tr class="elem">
+            <tr class="elem" id="${dish.id}">
                 <th>${dish.name}</th>
                 <th>${dish.info}</th>
                 <th>${dish.price}</th>
-                <c:if test = "${not empty param.edit}">
+                <!--<c:if test = "${not empty param.edit}">-->
                     <td>
                         <button type="submit"  class="btn">
                             Редактировать
                             <i class="icon-pencil"></i>
                         </button>
                     </td>
-                </c:if>
-                <c:if test = "${not empty param.remove}">
+                <!--</c:if>-->
+                <!--<c:if test = "${not empty param.remove}">-->
                     <td>
-                        <button type="submit"  class="btn">
+                        <button type="submit"  class="btn" onclick="deleteSubmit(${dish.id})">
                             Удалить
                             <i class="icon-remove"></i>
                         </button>
+                        <!--<a href="${pageContext.servletContext.contextPath}/admin/deleteDish/${dish.id}">-->
                     </td>
-                </c:if>
+                <!--</c:if>-->
             </tr>
             </c:forEach>
             </tbody>

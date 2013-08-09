@@ -22,7 +22,7 @@
     <bean id="dataSource" class="com.mysql.jdbc.jdbc2.optional.MysqlDataSource">
         <property name="url" value="jdbc:mysql://localhost:3306/borsh"/>
         <property name="user" value="root"/>
-        <property name="password" value="q1w2e3r4"/>
+        <property name="password" value="1123272"/>
     </bean>
 
     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
